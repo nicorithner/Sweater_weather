@@ -25,3 +25,18 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore RSpec examples file
+/spec/examples.txt
+
+# Ignore simplecov coverage
+/coverage
+/public/packs
+/public/packs-test
+/coverage/public/packs
+/node_modules
+
+# Ignore application configuration
+/config/application.yml
+# Ignore application configuration
+/config/application.yml
