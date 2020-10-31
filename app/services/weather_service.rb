@@ -1,5 +1,5 @@
 class WeatherService
-  def  self.get_forecast(location)
+  def self.get_forecast(location)
     response = conn.get('data/2.5/onecall?') do |f|
       f.params[:appid] = ENV['WEATHER_API_KEY']
       f.params[:lat] = location.latitude
