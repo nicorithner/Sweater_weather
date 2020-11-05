@@ -1,5 +1,6 @@
 class Image
   attr_reader :id, :location, :image_url, :author, :source, :logo
+
   def initialize(data)
     @id = nil
     @location = data[:other][:location]

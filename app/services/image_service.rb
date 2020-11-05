@@ -8,7 +8,7 @@ class ImageService
     end
 
     json = JSON.parse(response.body, symbolize_names: true)
-    {json: json[:hits][0], other: {location: location, source: "pixabay.com", logo:"https://pixabay.com/static/img/logo_square.png"}}
+    { json: json[:hits][0], other: { location: location, source: 'pixabay.com', logo: 'https://pixabay.com/static/img/logo_square.png' } }
   end
 
   def self.conn
