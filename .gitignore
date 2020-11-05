@@ -22,6 +22,9 @@
 /storage/*
 !/storage/.keep
 .byebug_history
+/node_modules
+/yarn-error.log
+/public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
@@ -31,10 +34,7 @@
 
 # Ignore simplecov coverage
 /coverage
-/public/packs
-/public/packs-test
-/coverage/public/packs
-/node_modules
+
 
 # Ignore application configuration
 /config/application.yml
