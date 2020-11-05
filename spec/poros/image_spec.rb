@@ -8,7 +8,6 @@ describe Image do
 
       expect(background_image).to be_a(Image)
       expect(background_image.id).to eq(nil) 
-      expect(background_image.type).to be_a(String) 
       expect(background_image.location).to be_a(String) 
       expect(background_image.image_url).to be_a(String) 
       expect(background_image.source).to be_a(String) 
