@@ -1,6 +1,5 @@
 class ImageService
   def self.get_image(location)
-
     response = conn.get('api/') do |f|
       f.params['key'] = ENV['IMAGE_API_KEY']
       f.params['q'] = location.split(',')[0]
