@@ -1,8 +1,7 @@
 class Image
-  attr_reader :id, :type, :location, :image_url, :author, :source, :logo
+  attr_reader :id, :location, :image_url, :author, :source, :logo
   def initialize(data)
     @id = nil
-    @type = data[:json][:type] 
     @location = data[:other][:location]
     @image_url = data[:json][:webformatURL]
     @author = data[:json][:user]
