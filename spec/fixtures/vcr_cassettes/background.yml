@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pixabay.com/api/?image_type=photo&key=IMAGE_API_KEY&orientation=horizontal&q=denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Nov 2020 23:08:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d53502a7ac24d9f78544fa7e2e9a96dda1604617728; expires=Sat, 05-Dec-20
+        23:08:48 GMT; path=/; domain=.pixabay.com; HttpOnly; SameSite=Lax; Secure
+      - anonymous_user_id=68b71af1-720a-4414-bf1d-9f8f0b9143cf; Path=/
+      Vary:
+      - Accept, Accept-Language, Cookie
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Reset:
+      - '0.72'
+      Allow:
+      - OPTIONS, POST, GET
+      Content-Security-Policy:
+      - frame-ancestors none
+      X-Frame-Options:
+      - DENY
+      Content-Language:
+      - en
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Cf-Cache-Status:
+      - MISS
+      Cf-Request-Id:
+      - 063c44881b0000276f8906d000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5eda3d202890276f-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":66,"totalHits":66,"hits":[{"id":2617524,"pageURL":"https://pixabay.com/photos/larimer-lodo-denver-colorado-2617524/","type":"photo","tags":"larimer,
+        lodo, denver","previewURL":"https://cdn.pixabay.com/photo/2017/08/10/03/04/larimer-2617524_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/54e6d4444f50a814f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/54e6d4444f50a814f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2760,"imageHeight":1840,"imageSize":2357829,"views":10948,"downloads":4719,"favorites":52,"likes":46,"comments":3,"user_id":1139623,"user":"quinntheislander","userImageURL":"https://cdn.pixabay.com/user/2017/08/02/07-08-01-965_250x250.png"},{"id":2228783,"pageURL":"https://pixabay.com/photos/denver-colorado-mountains-city-2228783/","type":"photo","tags":"denver,
+        colorado, mountains","previewURL":"https://cdn.pixabay.com/photo/2017/04/13/21/54/denver-2228783_150.jpg","previewWidth":150,"previewHeight":112,"webformatURL":"https://pixabay.com/get/54e2d74b4d5aaf14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":480,"largeImageURL":"https://pixabay.com/get/54e2d74b4d5aaf14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":1999,"imageHeight":1500,"imageSize":1090895,"views":11334,"downloads":5952,"favorites":36,"likes":29,"comments":1,"user_id":12019,"user":"12019","userImageURL":""},{"id":1676444,"pageURL":"https://pixabay.com/photos/denver-colorado-city-1676444/","type":"photo","tags":"denver,
+        colorado, city","previewURL":"https://cdn.pixabay.com/photo/2016/09/17/16/26/denver-1676444_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/57e6d2454e56a814f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/57e6d2454e56a814f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":1999,"imageHeight":1333,"imageSize":1252945,"views":6938,"downloads":3375,"favorites":28,"likes":27,"comments":5,"user_id":12019,"user":"12019","userImageURL":""},{"id":2095215,"pageURL":"https://pixabay.com/photos/lightning-strike-night-storm-bolt-2095215/","type":"photo","tags":"lightning,
+        strike, night","previewURL":"https://cdn.pixabay.com/photo/2017/02/24/14/25/lightning-2095215_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/54e0dc464853a914f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/54e0dc464853a914f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2000,"imageHeight":1333,"imageSize":432272,"views":15534,"downloads":7714,"favorites":65,"likes":76,"comments":11,"user_id":272447,"user":"skeeze","userImageURL":"https://cdn.pixabay.com/user/2020/07/21/01-37-17-778_250x250.jpg"},{"id":767050,"pageURL":"https://pixabay.com/photos/denver-skyline-city-cloudy-urban-767050/","type":"photo","tags":"denver,
+        skyline, city","previewURL":"https://cdn.pixabay.com/photo/2015/05/14/17/27/denver-767050_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/51e6d2434f52b10ff3d8992cc6203e781c37dee44e50774971297ad3904fcd_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/51e6d2434f52b108f5d0846096293f771336d6e5524c704f752b7dd5904ac750_1280.jpg","imageWidth":5184,"imageHeight":3456,"imageSize":3462854,"views":8120,"downloads":4069,"favorites":29,"likes":20,"comments":1,"user_id":677396,"user":"snicky2290","userImageURL":"https://cdn.pixabay.com/user/2015/05/14/17-49-04-573_250x250.jpg"},{"id":91090,"pageURL":"https://pixabay.com/photos/dolphin-fountain-water-statue-91090/","type":"photo","tags":"dolphin,
+        fountain, water","previewURL":"https://cdn.pixabay.com/photo/2013/03/07/03/20/dolphin-91090_150.jpg","previewWidth":150,"previewHeight":112,"webformatURL":"https://pixabay.com/get/5fe1d54a4a4faa0df7c5d57ccf2131771d3fdff85257714d732e7cd39545_640.jpg","webformatWidth":640,"webformatHeight":480,"largeImageURL":"https://pixabay.com/get/5fe1d54a4a4fad0bffd8992cc6203e781c37dee44e50774971297ad3904fcd_1280.jpg","imageWidth":2048,"imageHeight":1536,"imageSize":931771,"views":6343,"downloads":1630,"favorites":14,"likes":21,"comments":1,"user_id":25259,"user":"simplyelke","userImageURL":"https://cdn.pixabay.com/user/2013/03/08/03-26-04-563_250x250.jpg"},{"id":980887,"pageURL":"https://pixabay.com/photos/union-station-colorado-denver-train-980887/","type":"photo","tags":"union
+        station, colorado, denver","previewURL":"https://cdn.pixabay.com/photo/2015/10/10/15/23/union-station-980887_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/5fe8d54b4255b10ff3d8992cc6203e781c37dee44e50774971297ad3904fcd_640.jpg","webformatWidth":640,"webformatHeight":425,"largeImageURL":"https://pixabay.com/get/5fe8d54b4255b108f5d0846096293f771336d6e5524c704f752b7dd5904ac750_1280.jpg","imageWidth":6016,"imageHeight":4000,"imageSize":4847022,"views":4044,"downloads":2546,"favorites":24,"likes":9,"comments":1,"user_id":647706,"user":"jsteen81","userImageURL":"https://cdn.pixabay.com/user/2015/10/10/15-28-04-381_250x250.png"},{"id":1567052,"pageURL":"https://pixabay.com/photos/denver-skyline-cityscape-night-sky-1567052/","type":"photo","tags":"denver,
+        skyline, cityscape","previewURL":"https://cdn.pixabay.com/photo/2016/08/03/15/55/denver-1567052_150.jpg","previewWidth":150,"previewHeight":80,"webformatURL":"https://pixabay.com/get/57e5d3444a57ae14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":342,"largeImageURL":"https://pixabay.com/get/57e5d3444a57ae14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2200,"imageHeight":1178,"imageSize":950561,"views":7037,"downloads":3796,"favorites":18,"likes":17,"comments":1,"user_id":272447,"user":"skeeze","userImageURL":"https://cdn.pixabay.com/user/2020/07/21/01-37-17-778_250x250.jpg"},{"id":1676466,"pageURL":"https://pixabay.com/photos/denver-colorado-city-1676466/","type":"photo","tags":"denver,
+        colorado, city","previewURL":"https://cdn.pixabay.com/photo/2016/09/17/16/32/denver-1676466_150.jpg","previewWidth":150,"previewHeight":134,"webformatURL":"https://pixabay.com/get/57e6d2454e54aa14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":572,"largeImageURL":"https://pixabay.com/get/57e6d2454e54aa14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2200,"imageHeight":1967,"imageSize":2178153,"views":3896,"downloads":1720,"favorites":22,"likes":12,"comments":0,"user_id":12019,"user":"12019","userImageURL":""},{"id":2617836,"pageURL":"https://pixabay.com/photos/woman-girl-young-adult-female-2617836/","type":"photo","tags":"woman,
+        girl, young","previewURL":"https://cdn.pixabay.com/photo/2017/08/10/03/44/woman-2617836_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/54e6d4444251aa14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/54e6d4444251aa14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2923,"imageHeight":1949,"imageSize":1624570,"views":4455,"downloads":1928,"favorites":24,"likes":20,"comments":2,"user_id":1139623,"user":"quinntheislander","userImageURL":"https://cdn.pixabay.com/user/2017/08/02/07-08-01-965_250x250.png"},{"id":2617495,"pageURL":"https://pixabay.com/photos/larimer-street-road-denver-2617495/","type":"photo","tags":"larimer,
+        street, road","previewURL":"https://cdn.pixabay.com/photo/2017/08/10/02/58/larimer-2617495_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/54e6d4444e5ba914f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/54e6d4444e5ba914f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2700,"imageHeight":1800,"imageSize":2398499,"views":4489,"downloads":2440,"favorites":17,"likes":14,"comments":0,"user_id":1139623,"user":"quinntheislander","userImageURL":"https://cdn.pixabay.com/user/2017/08/02/07-08-01-965_250x250.png"},{"id":2230512,"pageURL":"https://pixabay.com/photos/denver-colorado-city-urban-2230512/","type":"photo","tags":"denver,
+        colorado, city","previewURL":"https://cdn.pixabay.com/photo/2017/04/14/15/17/denver-2230512_150.jpg","previewWidth":150,"previewHeight":95,"webformatURL":"https://pixabay.com/get/54e2d6434f53ae14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":407,"largeImageURL":"https://pixabay.com/get/54e2d6434f53ae14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":1999,"imageHeight":1274,"imageSize":1048394,"views":6446,"downloads":3221,"favorites":16,"likes":11,"comments":2,"user_id":12019,"user":"12019","userImageURL":""},{"id":869160,"pageURL":"https://pixabay.com/photos/bmx-fullpipe-denver-bike-extreme-869160/","type":"photo","tags":"bmx,
+        fullpipe, denver","previewURL":"https://cdn.pixabay.com/photo/2015/07/31/14/42/bmx-869160_150.jpg","previewWidth":150,"previewHeight":91,"webformatURL":"https://pixabay.com/get/5ee6dc424c52b10ff3d8992cc6203e781c37dee44e50774971297ad3904fcd_640.jpg","webformatWidth":640,"webformatHeight":390,"largeImageURL":"https://pixabay.com/get/5ee6dc424c52b108f5d0846096293f771336d6e5524c704f752b7dd5904ac750_1280.jpg","imageWidth":2000,"imageHeight":1220,"imageSize":299378,"views":8110,"downloads":3327,"favorites":44,"likes":35,"comments":2,"user_id":1129570,"user":"jklugiewicz","userImageURL":"https://cdn.pixabay.com/user/2015/07/31/14-41-19-691_250x250.jpg"},{"id":3737431,"pageURL":"https://pixabay.com/photos/denver-skyline-colorado-downtown-3737431/","type":"photo","tags":"denver,
+        skyline, colorado","previewURL":"https://cdn.pixabay.com/photo/2018/10/10/14/31/denver-3737431_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/55e7d6444e51ad14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/55e7d6444e51ad14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":3789,"imageHeight":2527,"imageSize":2364422,"views":2869,"downloads":1862,"favorites":7,"likes":8,"comments":0,"user_id":9971789,"user":"chachpond","userImageURL":""},{"id":4046946,"pageURL":"https://pixabay.com/photos/coors-field-baseball-stadium-4046946/","type":"photo","tags":"coors
+        field, baseball stadium, colorado rockies","previewURL":"https://cdn.pixabay.com/photo/2019/03/10/18/49/coors-field-4046946_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/52e0d1454356aa14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/52e0d1454356aa14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":4000,"imageHeight":2667,"imageSize":4175073,"views":2227,"downloads":1328,"favorites":8,"likes":8,"comments":2,"user_id":1778011,"user":"1778011","userImageURL":""},{"id":790472,"pageURL":"https://pixabay.com/photos/denver-colorado-city-downtown-790472/","type":"photo","tags":"denver,
+        colorado, city","previewURL":"https://cdn.pixabay.com/photo/2015/05/30/17/19/denver-790472_150.jpg","previewWidth":150,"previewHeight":87,"webformatURL":"https://pixabay.com/get/51e9d5474d50b10ff3d8992cc6203e781c37dee44e50774971297ad3904fcd_640.jpg","webformatWidth":640,"webformatHeight":375,"largeImageURL":"https://pixabay.com/get/51e9d5474d50b108f5d0846096293f771336d6e5524c704f752b7dd5904ac750_1280.jpg","imageWidth":4755,"imageHeight":2792,"imageSize":4143401,"views":7072,"downloads":3217,"favorites":14,"likes":9,"comments":0,"user_id":568714,"user":"mrminibike","userImageURL":""},{"id":1676475,"pageURL":"https://pixabay.com/photos/denver-colorado-cheesman-park-1676475/","type":"photo","tags":"denver,
+        colorado, cheesman park","previewURL":"https://cdn.pixabay.com/photo/2016/09/17/16/36/denver-1676475_150.jpg","previewWidth":150,"previewHeight":82,"webformatURL":"https://pixabay.com/get/57e6d2454e55a914f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":352,"largeImageURL":"https://pixabay.com/get/57e6d2454e55a914f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":2199,"imageHeight":1210,"imageSize":1302176,"views":2844,"downloads":1410,"favorites":11,"likes":11,"comments":0,"user_id":12019,"user":"12019","userImageURL":""},{"id":381310,"pageURL":"https://pixabay.com/photos/denver-municipal-office-denver-381310/","type":"photo","tags":"denver,
+        municipal office denver, town hall","previewURL":"https://cdn.pixabay.com/photo/2014/07/01/15/10/denver-381310_150.jpg","previewWidth":150,"previewHeight":112,"webformatURL":"https://pixabay.com/get/55e8d4404b52b10ff3d8992cc6203e781c37dee44e50774971297ad3904fcd_640.jpg","webformatWidth":640,"webformatHeight":480,"largeImageURL":"https://pixabay.com/get/55e8d4404b52b108f5d0846096293f771336d6e5524c704f752b7dd5904ac750_1280.jpg","imageWidth":2848,"imageHeight":2136,"imageSize":1689190,"views":3197,"downloads":1602,"favorites":10,"likes":10,"comments":1,"user_id":259067,"user":"Blok","userImageURL":""},{"id":4045017,"pageURL":"https://pixabay.com/photos/coors-field-baseball-stadium-denver-4045017/","type":"photo","tags":"coors
+        field, baseball stadium, denver","previewURL":"https://cdn.pixabay.com/photo/2019/03/09/21/11/coors-field-4045017_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/52e0d1464a53ab14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/52e0d1464a53ab14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":4000,"imageHeight":2667,"imageSize":4068242,"views":2169,"downloads":1219,"favorites":11,"likes":3,"comments":0,"user_id":1778011,"user":"1778011","userImageURL":""},{"id":3339016,"pageURL":"https://pixabay.com/photos/tree-nature-dawn-winter-fall-3339016/","type":"photo","tags":"tree,
+        nature, dawn","previewURL":"https://cdn.pixabay.com/photo/2018/04/21/17/53/tree-3339016_150.jpg","previewWidth":150,"previewHeight":100,"webformatURL":"https://pixabay.com/get/55e3d64a4a53aa14f1dc846096293f771336d6e5524c704f752b7dd5904ac750_640.jpg","webformatWidth":640,"webformatHeight":427,"largeImageURL":"https://pixabay.com/get/55e3d64a4a53aa14f6da8c7dda7936761c39d7ed53506c48732f7fd2964ac25ab0_1280.jpg","imageWidth":3504,"imageHeight":2339,"imageSize":1871252,"views":1629,"downloads":888,"favorites":11,"likes":9,"comments":0,"user_id":8757122,"user":"DawitTibebu","userImageURL":"https://cdn.pixabay.com/user/2018/04/20/23-58-28-970_250x250.jpg"}]}'
+  recorded_at: Thu, 05 Nov 2020 23:08:48 GMT
+recorded_with: VCR 6.0.0
