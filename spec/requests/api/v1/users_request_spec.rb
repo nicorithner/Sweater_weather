@@ -27,16 +27,24 @@ RSpec.describe 'Users API' do
 
   describe 'Users Login Api' do
     it "A successful request returns the user’s api key" do
+      user_params = ({
+                      email: 'another@example.com',
+                      password: 'password123',
+                      password_confirmation: 'password123'
+                    })
+      headers = {'CONTENT_TYPE' => 'application/json'}
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
       login_params =
                     {
-                      email: 'whatever@example.com',
-                      password: 'password'
+                      email: 'another@example.com',
+                      password: 'password123'
                     }
       headers = {'CONTENT_TYPE' => 'application/json'}
   
-      post 'api/v1/sessions', headers: headers, params: JSON.generate(login_params)
+      post '/api/v1/sessions', headers: headers, params: JSON.generate(login_params)
       json = JSON.parse(response.body, symbolize_names: :true)
-  
+  binding.pry
       expect(response).to be_successful
       expect(user.email).to eq(json[:data][:attributes][:email])
       expect(user.api_key).to eq(json[:data][:attributes][:api_key])
@@ -46,3 +54,19 @@ RSpec.describe 'Users API' do
     end
   end
 end
+
+# Response:
+
+# status: 200
+# body:
+
+# {
+#   "data": {
+#     "type": "users",
+#     "id": "1",
+#     "attributes": {
+#       "email": "whatever@example.com",
+#       "api_key": "jgn983hy48thw9begh98h4539h4"
+#     }
+#   }
+# }
