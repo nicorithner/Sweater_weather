@@ -3,8 +3,7 @@ class Api::V1::UsersController < ApplicationController
     user = User.new(user_params)
     user.save
     user.api_key
-    # binding.pry
-    render json: UsersSerializer.new(user)
+    render json: UsersSerializer.new(user), status: :created
   end
 
   private
