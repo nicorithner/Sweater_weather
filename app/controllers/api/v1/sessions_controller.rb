@@ -3,14 +3,14 @@ class Api::V1::SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       render json: SessionsSerializer.new(user), status: :ok
+    elsif
+      params[:email].nil?
+      render json: { message: 'Email cannot be blank' }, status: :not_acceptable 
+    elsif
+      params[:password].nil?
+      render json: { message: 'Password cannot be blank' }, status: :not_acceptable 
     else
-      render json: {}, status: :unauthorized 
-      #syntax error fixed when I added curlies
-
-      # here error message. How to return a body with error description???
-
-      # An unsuccessful request returns an appropriate 400-level status code and body with a description of why the request wasn’t successful.
-      # Potential reasons a request would fail: credentials are bad, etc
+      render json: { message: 'Your email or password was incorrect' }, status: :unauthorized
     end
   end
 end
