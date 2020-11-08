@@ -29,4 +29,3 @@ class MapService
 
 
 end
-#http://www.mapquestapi.com/directions/v2/route?key=lEqLhOepdVCpmyz6y6eMQZt8jtRBUO0b&from=New York, NY&to=Los Angeles, CA
