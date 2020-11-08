@@ -19,6 +19,14 @@ RSpec.describe "Roadtrip Api" do
       
       binding.pry
       ## Here will add expectations test
+      expect(json[:data]).to be_a(Hash)
+      expect(json[:data][:id]).to eq(nil)
+      expect(json[:data][:type]).to eq("roadtrip")
+      expect(json[:data][:attributes][:start_city]).to eq("New York, NY")
+      expect(json[:data][:attributes][:end_city]).to eq("Los Angeles, CA")
+      expect(json[:data][:attributes][:travel_time]).to be_a(String)
+      expect(json[:data][:attributes][:weather_at_eta][:temperature]).to be_a(Numeric)
+      expect(json[:data][:attributes][:weather_at_eta][:conditions]).to be_a(String)
     end
   end
 end
