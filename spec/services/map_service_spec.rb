@@ -26,28 +26,3 @@ RSpec.describe MapService do
     end
   end
 end
-
-# pry(MapService)> json[:route].keys
-# => [:hasTollRoad,
-#  :hasBridge,
-#  :boundingBox,
-#  :distance,
-#  :hasTimedRestriction,
-#  :hasTunnel,
-#  :hasHighway,
-#  :computedWaypoints,
-#  :routeError,
-#  :formattedTime,
-#  :sessionId,
-#  :hasAccessRestriction,
-#  :realTime,
-#  :hasSeasonalClosure,
-#  :hasCountryCross,
-#  :fuelUsed,
-#  :legs,
-#  :options,
-#  :locations,
-#  :time,
-#  :hasUnpaved,
-#  :locationSequence,
-#  :hasFerry]
