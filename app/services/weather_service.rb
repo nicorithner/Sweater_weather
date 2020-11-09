@@ -18,7 +18,7 @@ class WeatherService
       f.params[:units] = 'imperial'
       f.params[:exclude] = 'daily,minutely, alerts'
     end
-    json = JSON.parse(response.body, symbolize_names: :true)
+    json = JSON.parse(response.body, symbolize_names: true)
     json[:hourly].find { |hash| hash if hash[:dt] == eta }
   end
 

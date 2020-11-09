@@ -1,6 +1,6 @@
 class RoadTripSerializer
   include JSONAPI::Serializer
-  set_id{nil}
+  set_id { nil }
 
   attribute :start_city do |object|
     object.origin
@@ -15,6 +15,6 @@ class RoadTripSerializer
   end
 
   attribute :weather_at_eta do |object|
-    {temperature: object.temperature, conditions: object.description}
+    { temperature: object.temperature, conditions: object.description }
   end
 end
