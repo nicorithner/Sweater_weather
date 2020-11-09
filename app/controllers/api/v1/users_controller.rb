@@ -4,12 +4,11 @@ class Api::V1::UsersController < ApplicationController
     if user.save
       user.api_key
       render json: UsersSerializer.new(user), status: :created
-    elsif
-      user_params[:email].nil?
+    elsif user_params[:email].nil?
       render json: { message: 'Email cannot be blank' }, status: :not_acceptable
     else
       user_params[:password].nil?
-      render json: { message: 'Password cannot be blank' }, status: :not_acceptable 
+      render json: { message: 'Password cannot be blank' }, status: :not_acceptable
     end
   end
 

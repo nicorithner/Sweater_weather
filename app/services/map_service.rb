@@ -9,6 +9,16 @@ class MapService
     json[:results][0][:locations][0][:latLng]
   end
 
+  def self.get_route(origin, destination)
+    response = conn.get('directions/v2/route') do |f|
+      f.params[:key] = ENV['MAP_API_KEY']
+      f.params[:from] = origin
+      f.params[:to] = destination
+    end
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new('https://www.mapquestapi.com/')
   end
