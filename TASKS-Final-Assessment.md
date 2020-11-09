@@ -38,16 +38,16 @@ Your endpoint should follow this format:
       "trails": [
         {
           "name": "Boulder Skyline Traverse",
-          "summary": "The classic long mountain route in Boulder."
-          "difficulty": "black"
-          "location": "Superior, Colorado"
+          "summary": "The classic long mountain route in Boulder.",
+          "difficulty": "black",
+          "location": "Superior, Colorado",
           "distance_to_trail": "23.008"
         },
         {
           "name": "Bear Peak Out and Back",
-          "summary": "A must-do hike for Boulder locals and visitors alike!"
-          "difficulty": "black"
-          "location": "Boulder, Colorado"
+          "summary": "A must-do hike for Boulder locals and visitors alike!",
+          "difficulty": "black",
+          "location": "Boulder, Colorado",
           "distance_to_trail": "30.098"
         },
         {...}
