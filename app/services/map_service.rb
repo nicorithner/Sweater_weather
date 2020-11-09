@@ -22,6 +22,15 @@ class MapService
   def self.conn
     Faraday.new('https://www.mapquestapi.com/')
   end
-
+  
+  # def self.get_distance_to_trail(or_lat, or_lng, dst_lat, dst_lng)
+  #   response = conn.get('directions/v2/route') do |f|
+  #     f.params[:key] = ENV['MAP_API_KEY']
+  #     f.params[:from] = "#{or_lat},#{or_lng}"
+  #     f.params[:to] = "#{dst_lat},#{dst_lng}"
+  #   end
+  #   json = JSON.parse(response.body, symbolize_names: true)
+  #   binding.pry
+  # end
 
 end
