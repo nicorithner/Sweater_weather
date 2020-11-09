@@ -8,9 +8,11 @@ describe 'Trails API' do
 
       expect(json[:data]).to be_a(Hash)
       expect(json[:data][:id]).to eq(nil)
-      expect(json[:data][:type]).to eq("trail")
+      expect(json[:data][:type]).to eq("trails")
       expect(json[:data][:attributes][:location]).to eq("denver,co")
       expect(json[:data][:attributes][:forecast]).to be_a(Hash)
+      expect(json[:data][:attributes][:forecast][:summary]).to be_a(String)
+      expect(json[:data][:attributes][:forecast][:temperature]).to be_a(String)
       expect(json[:data][:attributes][:trails]).to be_a(Array)
       expect(json[:data][:attributes][:trails][0]).to be_a(Hash)
       expect(json[:data][:attributes][:trails][0][:name]).to be_a(String)
