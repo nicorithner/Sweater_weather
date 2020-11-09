@@ -6,7 +6,7 @@ class Api::V1::TrailsController < ApplicationController
     location_forecast = Forecast.new(WeatherService.get_forecast(location))
     current_forecast = location_forecast.current_weather
 
-    trails_search = Trail.new(trails, current_forecast)
+    trails_search = Trail.new({location: params[:location], trails: trails, forecast: current_forecast})
     render json: TrailsSerializer.new(trails_search)
   end
 end
