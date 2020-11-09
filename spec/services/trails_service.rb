@@ -4,7 +4,7 @@ RSpec.describe TrailsService do
   it 'Can get a list of trails near search location' do
     VCR.use_cassette('Trails_search') do
       coordinates = {lat: 39.738453, lng: -104.984853}
-      search_results = TrailService.new.get_trails(coordinates)
+      search_results = TrailsService.new.get_trails(coordinates)
 
       expect(search_results).to be_a(Hash)
       expect(search_results[:trails]).to be_an(Array)

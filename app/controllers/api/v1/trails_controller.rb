@@ -1,7 +1,7 @@
 class Api::V1::TrailsController < ApplicationController
   def index
     coordinates = MapService.get_coordinates(params[:location])
-    trails = TrailService.new.get_trails(coordinates)
+    trails = TrailsService.new.get_trails(coordinates)
     # binding.pry
   end
 end
