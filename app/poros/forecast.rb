@@ -5,7 +5,7 @@ class Forecast
     @id = nil
     @type = 'forecast'
     @current_weather = data[:current]
-    @daily_weather = data[:daily]
+    @daily_weather = data[:daily].first(5)
     @hourly_weather = data[:hourly]
     @timezone = data[:timezone]
   end
