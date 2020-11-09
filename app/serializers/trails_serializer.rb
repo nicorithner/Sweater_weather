@@ -9,7 +9,8 @@ class TrailsSerializer
         "name": trail[:name],
         "summary": trail[:summary],
         "difficulty": trail[:difficulty],
-        "location": trail[:location]
+        "location": trail[:location],
+        "distance_to_trail":( MapService.get_route(object.location, trail[:location]))[:route][:distance]
       }
     end
   end
