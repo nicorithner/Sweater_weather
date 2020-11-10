@@ -5,6 +5,15 @@ class RoadtripFacade
     days = (trip[:route][:time].to_f / 60 / 60 / 24).round(2)
     eta = (DateTime.now + days).beginning_of_hour.to_i
     eta_forecast = WeatherService.get_eta_forecast(dest_coords, eta)
-    RoadTrip.create(origin: params[:origin], destination: params[:destination], duration: trip[:route][:formattedTime], temperature: eta_forecast[:temp], description: eta_forecast[:weather][0][:description], user_id: params[:user_id])
+    create_trip(params, trip, eta_forecast)
+  end
+
+  def self.create_trip(params, trip, eta_forecast)
+    RoadTrip.create(origin: params[:origin],
+                    destination: params[:destination],
+                    duration: trip[:route][:formattedTime],
+                    temperature: eta_forecast[:temp],
+                    description: eta_forecast[:weather][0][:description],
+                    user_id: params[:user_id])
   end
 end

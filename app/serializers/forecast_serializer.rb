@@ -19,35 +19,35 @@ class ForecastSerializer
   end
 
   attributes :daily_weather do |object|
-      object.daily_weather.map do |day|
-        {
-          "date": Time.at(day[:dt]),
-          "sunrise": Time.at(day[:sunrise]),
-          "sunset": Time.at(day[:sunset]),
-          "max_temp": day[:temp][:max],
-          "min_temp": day[:temp][:min],
-          "conditions": day[:weather][0][:description],
-          "icon": day[:weather][0][:icon]
-        }
-      end
+    object.daily_weather.map do |day|
+      {
+        "date": Time.at(day[:dt]),
+        "sunrise": Time.at(day[:sunrise]),
+        "sunset": Time.at(day[:sunset]),
+        "max_temp": day[:temp][:max],
+        "min_temp": day[:temp][:min],
+        "conditions": day[:weather][0][:description],
+        "icon": day[:weather][0][:icon]
+      }
+    end
   end
 
   attributes :hourly_weather do |object|
-      object.hourly_weather.map do |hour|
-        { 
-          "time": Time.at(hour[:dt]),
-          "temperature": hour[:temp],
-          "wind_speed": "#{hour[:wind_speed]} mph",
-          "wind_direction": wind_direction(hour[:wind_deg]),
-          "conditions": hour[:weather][0][:description],
-          "icon": hour[:weather][0][:icon]
-        }
-      end
+    object.hourly_weather.map do |hour|
+      {
+        "time": Time.at(hour[:dt]),
+        "temperature": hour[:temp],
+        "wind_speed": "#{hour[:wind_speed]} mph",
+        "wind_direction": wind_direction(hour[:wind_deg]),
+        "conditions": hour[:weather][0][:description],
+        "icon": hour[:weather][0][:icon]
+      }
+    end
   end
 
   def self.wind_direction(deg)
-    val = (deg/22.5)+0.5
-    dir = ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"]
-    'from ' + dir[(val % dir.length)]
+    val = (deg / 22.5) + 0.5
+    dir = %w[N NNE NE ENE E ESE SE SSE S SSW SW WSW W WNW NW NNW]
+    "from #{dir[(val % dir.length)]}"
   end
 end
