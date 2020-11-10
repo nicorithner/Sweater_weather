@@ -54,6 +54,22 @@ RSpec.describe 'Users API' do
         expect(response).to have_http_status(406)
         expect(json[:message]).to eq('Password cannot be blank')
       end
+
+      it "Not matching password request returns status 406 and a body with error description" do
+        user_params = ({
+                        email: 'omega@example.com',
+                        password: 'password123',
+                        password_confirmation: 'password'
+                      })
+        headers = {'CONTENT_TYPE' => 'application/json'}
+
+        post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
+        json = JSON.parse(response.body, symbolize_names: :true)
+
+        expect(response).not_to be_successful
+        expect(response).to have_http_status(406)
+        expect(json[:message]).to eq("Passwords don't match")
+      end
     end
   end
 
