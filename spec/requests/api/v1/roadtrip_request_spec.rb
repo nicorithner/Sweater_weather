@@ -26,6 +26,7 @@ RSpec.describe "Roadtrip Api" do
         expect(json[:data][:attributes][:start_city]).to eq("New York, NY")
         expect(json[:data][:attributes][:end_city]).to eq("Los Angeles, CA")
         expect(json[:data][:attributes][:travel_time]).to be_a(String)
+        expect(json[:data][:attributes][:travel_time]).to include("hours", "minutes")
         expect(json[:data][:attributes][:weather_at_eta][:temperature]).to be_a(String)
         expect(json[:data][:attributes][:weather_at_eta][:conditions]).to be_a(String)
       end
