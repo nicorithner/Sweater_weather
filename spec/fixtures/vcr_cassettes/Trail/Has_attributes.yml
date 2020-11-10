@@ -1,0 +1,962 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=MAP_API_KEY&location=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:50 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1734'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:50 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=B5A6E6E23924E1CE9CDDB7B54953972C; Path=/; HttpOnly; Secure
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAP_API_KEY&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-809761644"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAP_API_KEY&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-521760630"}]}]}'
+  recorded_at: Mon, 09 Nov 2020 18:12:50 GMT
+- request:
+    method: get
+    uri: https://www.hikingproject.com/data/get-trails?key=200545096-5f955e77feb9332b7dc97751e8ac525e&lat=39.738453&lon=-104.984853&maxDistance=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:50 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Pragma:
+      - no-cache
+      X-Ap-Request-Id:
+      - e229b667-373a-4ab1-be0b-25d7958aef2d
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1920'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "trails": [
+                {
+                    "id": 7008385,
+                    "name": "Highline Canal Trail",
+                    "type": "Recommended Route",
+                    "summary": "Widely recognized as one of the best urban trails in the country.",
+                    "difficulty": "green",
+                    "stars": 4.5,
+                    "starVotes": 14,
+                    "location": "Roxborough Park, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7008385\/highline-canal-trail",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7007020_sqsmall_1554321989.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7007020_small_1554321989.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7007020_smallMed_1554321989.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7007020_medium_1554321989.jpg",
+                    "length": 61.3,
+                    "ascent": 369,
+                    "descent": -468,
+                    "high": 5549,
+                    "low": 5435,
+                    "longitude": -105.0908,
+                    "latitude": 39.487,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7003386,
+                    "name": "Green Mountain Tour",
+                    "type": "Recommended Route",
+                    "summary": "A good hike with easy Front Range access.  Some steep climbs, rocks and nice views.",
+                    "difficulty": "blue",
+                    "stars": 3.8,
+                    "starVotes": 28,
+                    "location": "West Pleasant View, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7003386\/green-mountain-tour",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_sqsmall_1554311770.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_small_1554311770.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_smallMed_1554311770.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_medium_1554311770.jpg",
+                    "length": 5.4,
+                    "ascent": 909,
+                    "descent": -900,
+                    "high": 6854,
+                    "low": 6132,
+                    "longitude": -105.1524,
+                    "latitude": 39.6903,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry - with 8 miles before starting to check miles.",
+                    "conditionDate": "2020-08-18 18:48:26"
+                },
+                {
+                    "id": 7027595,
+                    "name": "Mount Carbon Loop",
+                    "type": "Recommended Route",
+                    "summary": "A great hike on smooth trails.",
+                    "difficulty": "blue",
+                    "stars": 3.5,
+                    "starVotes": 24,
+                    "location": "Morrison, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7027595\/mount-carbon-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029016_sqsmall_1554919742.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029016_small_1554919742.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029016_smallMed_1554919742.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029016_medium_1554919742.jpg",
+                    "length": 6.8,
+                    "ascent": 447,
+                    "descent": -448,
+                    "high": 5737,
+                    "low": 5512,
+                    "longitude": -105.1744,
+                    "latitude": 39.6514,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-10-24 09:52:28"
+                },
+                {
+                    "id": 7018092,
+                    "name": "Denver Zoo",
+                    "type": "Recommended Route",
+                    "summary": "A stroll through the Denver Zoo. Admission fees charged to access this trail",
+                    "difficulty": "green",
+                    "stars": 4.5,
+                    "starVotes": 2,
+                    "location": "Denver, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7018092\/denver-zoo",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_sqsmall_1554829956.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_small_1554829956.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_smallMed_1554829956.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_medium_1554829956.jpg",
+                    "length": 2.6,
+                    "ascent": 41,
+                    "descent": -42,
+                    "high": 5289,
+                    "low": 5254,
+                    "longitude": -104.9489,
+                    "latitude": 39.7503,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7011837,
+                    "name": "City Park Loop",
+                    "type": "Recommended Route",
+                    "summary": "An easy escape from the hustle and bustle of Denver's city limits.",
+                    "difficulty": "green",
+                    "stars": 3.8,
+                    "starVotes": 6,
+                    "location": "Denver, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7011837\/city-park-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_sqsmall_1554559518.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_small_1554559518.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_smallMed_1554559518.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_medium_1554559518.jpg",
+                    "length": 3.3,
+                    "ascent": 56,
+                    "descent": -55,
+                    "high": 5301,
+                    "low": 5255,
+                    "longitude": -104.9567,
+                    "latitude": 39.7495,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7091962,
+                    "name": "Green Mountain Summit Loop",
+                    "type": "Recommended Route",
+                    "summary": "A climb around the ridge of Green Mountain Trail with some detours.",
+                    "difficulty": "blue",
+                    "stars": 3,
+                    "starVotes": 3,
+                    "location": "West Pleasant View, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7091962\/green-mountain-summit-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_sqsmall_1554311770.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_small_1554311770.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_smallMed_1554311770.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_medium_1554311770.jpg",
+                    "length": 7.7,
+                    "ascent": 878,
+                    "descent": -878,
+                    "high": 6838,
+                    "low": 6143,
+                    "longitude": -105.1522,
+                    "latitude": 39.6906,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7004549,
+                    "name": "Green Mountain Trail",
+                    "type": "Trail",
+                    "summary": "A trail that circumnavigates Green Mountain with great views of the city and other mountains.",
+                    "difficulty": "blue",
+                    "stars": 3.9,
+                    "starVotes": 33,
+                    "location": "West Pleasant View, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7004549\/green-mountain-trail",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_sqsmall_1554311770.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_small_1554311770.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_smallMed_1554311770.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_medium_1554311770.jpg",
+                    "length": 6.5,
+                    "ascent": 997,
+                    "descent": -984,
+                    "high": 6831,
+                    "low": 6092,
+                    "longitude": -105.1524,
+                    "latitude": 39.6903,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-10-13 19:02:35"
+                },
+                {
+                    "id": 7020640,
+                    "name": "Cheesman Park",
+                    "type": "Trail",
+                    "summary": "Nice trail in the city.",
+                    "difficulty": "green",
+                    "stars": 4.1,
+                    "starVotes": 8,
+                    "location": "Denver, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7020640\/cheesman-park",
+                    "imgSqSmall": "",
+                    "imgSmall": "",
+                    "imgSmallMed": "",
+                    "imgMedium": "",
+                    "length": 1.1,
+                    "ascent": 44,
+                    "descent": -45,
+                    "high": 5364,
+                    "low": 5335,
+                    "longitude": -104.9669,
+                    "latitude": 39.7334,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7073054,
+                    "name": "Bear Creek Trail",
+                    "type": "Trail",
+                    "summary": "A great paved trail connecting the South Platte Trail in Englewood to Morrison and several open spaces in the area.",
+                    "difficulty": "greenBlue",
+                    "stars": 4.3,
+                    "starVotes": 3,
+                    "location": "Sheridan, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7073054\/bear-creek-trail",
+                    "imgSqSmall": "",
+                    "imgSmall": "",
+                    "imgSmallMed": "",
+                    "imgMedium": "",
+                    "length": 14.9,
+                    "ascent": 806,
+                    "descent": -277,
+                    "high": 5804,
+                    "low": 5269,
+                    "longitude": -105.0081,
+                    "latitude": 39.6516,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7014332,
+                    "name": "Farmers Highline Canal Trail",
+                    "type": "Trail",
+                    "summary": "Farmers Highline Canal Trail Passing through Westminster, Northglenn, and Thornton.",
+                    "difficulty": "green",
+                    "stars": 4,
+                    "starVotes": 5,
+                    "location": "Northglenn, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7014332\/farmers-highline-canal-trail",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020497_sqsmall_1554838460.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020497_small_1554838460.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020497_smallMed_1554838460.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020497_medium_1554838460.jpg",
+                    "length": 12.8,
+                    "ascent": 417,
+                    "descent": -161,
+                    "high": 5540,
+                    "low": 5284,
+                    "longitude": -104.9687,
+                    "latitude": 39.9283,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                }
+            ],
+            "success": 1
+        }
+  recorded_at: Mon, 09 Nov 2020 18:12:51 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/onecall?appid=WEATHER_API_KEY&exclude=minutely&lat=39.738453&lon=-104.984853&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 09 Nov 2020 18:12:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '15589'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?exclude=minutely&lat=39.74&lon=-104.98&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":39.74,"lon":-104.98,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1604945572,"sunrise":1604929101,"sunset":1604965761,"temp":34.3,"feels_like":25.83,"pressure":1011,"humidity":66,"dew_point":25.05,"uvi":2.5,"clouds":90,"visibility":6437,"wind_speed":6.93,"wind_deg":40,"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}]},"hourly":[{"dt":1604944800,"temp":34.3,"feels_like":25.41,"pressure":1011,"humidity":66,"dew_point":25.05,"clouds":90,"visibility":10000,"wind_speed":7.67,"wind_deg":12,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.3},{"dt":1604948400,"temp":37.78,"feels_like":29.16,"pressure":1010,"humidity":65,"dew_point":27.66,"clouds":85,"visibility":10000,"wind_speed":7.78,"wind_deg":39,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.35},{"dt":1604952000,"temp":39.36,"feels_like":31.01,"pressure":1009,"humidity":66,"dew_point":29.32,"clouds":90,"visibility":10000,"wind_speed":7.74,"wind_deg":51,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"pop":0.38,"rain":{"1h":0.56}},{"dt":1604955600,"temp":39.09,"feels_like":32.47,"pressure":1008,"humidity":71,"dew_point":30.69,"clouds":94,"visibility":3007,"wind_speed":5.03,"wind_deg":40,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.47},{"dt":1604959200,"temp":37.6,"feels_like":30.25,"pressure":1008,"humidity":79,"dew_point":31.73,"clouds":95,"visibility":1601,"wind_speed":6.62,"wind_deg":51,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.51},{"dt":1604962800,"temp":36.27,"feels_like":28.33,"pressure":1009,"humidity":86,"dew_point":32.61,"clouds":96,"visibility":169,"wind_speed":7.87,"wind_deg":46,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.71},{"dt":1604966400,"temp":34.72,"feels_like":24.64,"pressure":1011,"humidity":88,"dew_point":30.92,"clouds":97,"visibility":207,"wind_speed":11.43,"wind_deg":30,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.71},{"dt":1604970000,"temp":32.11,"feels_like":21.42,"pressure":1012,"humidity":96,"dew_point":29.19,"clouds":100,"visibility":194,"wind_speed":12.41,"wind_deg":9,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.79},{"dt":1604973600,"temp":31.26,"feels_like":23.23,"pressure":1013,"humidity":97,"dew_point":28.38,"clouds":100,"visibility":1456,"wind_speed":7.54,"wind_deg":66,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.88},{"dt":1604977200,"temp":30.94,"feels_like":23.43,"pressure":1014,"humidity":96,"dew_point":27.68,"clouds":100,"visibility":1790,"wind_speed":6.46,"wind_deg":36,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.79},{"dt":1604980800,"temp":30.85,"feels_like":24.17,"pressure":1014,"humidity":96,"dew_point":27.07,"clouds":100,"visibility":6435,"wind_speed":4.97,"wind_deg":59,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.79},{"dt":1604984400,"temp":31.15,"feels_like":25.03,"pressure":1015,"humidity":95,"dew_point":26.37,"clouds":100,"visibility":10000,"wind_speed":4,"wind_deg":23,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.75},{"dt":1604988000,"temp":31.21,"feels_like":24.57,"pressure":1015,"humidity":95,"dew_point":26.19,"clouds":100,"visibility":10000,"wind_speed":4.92,"wind_deg":76,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.75},{"dt":1604991600,"temp":31.33,"feels_like":25.12,"pressure":1015,"humidity":94,"dew_point":25.77,"clouds":100,"visibility":10000,"wind_speed":4.14,"wind_deg":80,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.04},{"dt":1604995200,"temp":31.8,"feels_like":26.2,"pressure":1015,"humidity":93,"dew_point":25.54,"clouds":100,"visibility":10000,"wind_speed":3.11,"wind_deg":61,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1604998800,"temp":31.23,"feels_like":25.47,"pressure":1015,"humidity":94,"dew_point":25.2,"clouds":74,"visibility":10000,"wind_speed":3.31,"wind_deg":75,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1605002400,"temp":31.32,"feels_like":26.11,"pressure":1015,"humidity":93,"dew_point":24.84,"clouds":56,"visibility":10000,"wind_speed":2.28,"wind_deg":133,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1605006000,"temp":31.84,"feels_like":26.62,"pressure":1016,"humidity":93,"dew_point":24.64,"clouds":54,"visibility":10000,"wind_speed":2.44,"wind_deg":181,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1605009600,"temp":32.22,"feels_like":26.29,"pressure":1016,"humidity":91,"dew_point":23.9,"clouds":57,"visibility":10000,"wind_speed":3.65,"wind_deg":188,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1605013200,"temp":32.07,"feels_like":25.52,"pressure":1016,"humidity":89,"dew_point":21.45,"clouds":0,"visibility":10000,"wind_speed":4.61,"wind_deg":197,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605016800,"temp":31.87,"feels_like":24.66,"pressure":1016,"humidity":86,"dew_point":18.64,"clouds":0,"visibility":10000,"wind_speed":5.53,"wind_deg":203,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605020400,"temp":33.64,"feels_like":27.03,"pressure":1015,"humidity":79,"dew_point":17.01,"clouds":0,"visibility":10000,"wind_speed":4.38,"wind_deg":217,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605024000,"temp":36.63,"feels_like":29.32,"pressure":1014,"humidity":69,"dew_point":15.94,"clouds":0,"visibility":10000,"wind_speed":5.53,"wind_deg":205,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605027600,"temp":40.3,"feels_like":32.02,"pressure":1012,"humidity":57,"dew_point":11.97,"clouds":0,"visibility":10000,"wind_speed":7,"wind_deg":205,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605031200,"temp":43.03,"feels_like":36.39,"pressure":1011,"humidity":49,"dew_point":8.87,"clouds":0,"visibility":10000,"wind_speed":3.87,"wind_deg":202,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605034800,"temp":45.12,"feels_like":38.93,"pressure":1009,"humidity":45,"dew_point":7.86,"clouds":0,"visibility":10000,"wind_speed":3.04,"wind_deg":179,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605038400,"temp":46.92,"feels_like":41.85,"pressure":1008,"humidity":41,"dew_point":7.57,"clouds":6,"visibility":10000,"wind_speed":0.94,"wind_deg":276,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605042000,"temp":47.43,"feels_like":40.51,"pressure":1008,"humidity":41,"dew_point":8.02,"clouds":29,"visibility":10000,"wind_speed":4.29,"wind_deg":340,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"pop":0},{"dt":1605045600,"temp":47.16,"feels_like":39.4,"pressure":1009,"humidity":42,"dew_point":9.14,"clouds":47,"visibility":10000,"wind_speed":5.88,"wind_deg":334,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"pop":0},{"dt":1605049200,"temp":46.42,"feels_like":39.11,"pressure":1010,"humidity":44,"dew_point":10.74,"clouds":58,"visibility":10000,"wind_speed":5.17,"wind_deg":317,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"pop":0},{"dt":1605052800,"temp":44.71,"feels_like":38.21,"pressure":1012,"humidity":48,"dew_point":12.81,"clouds":61,"visibility":10000,"wind_speed":3.85,"wind_deg":297,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1605056400,"temp":43.75,"feels_like":37.85,"pressure":1014,"humidity":50,"dew_point":11.97,"clouds":6,"visibility":10000,"wind_speed":2.8,"wind_deg":298,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605060000,"temp":42.13,"feels_like":36.36,"pressure":1015,"humidity":53,"dew_point":11.75,"clouds":3,"visibility":10000,"wind_speed":2.55,"wind_deg":247,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605063600,"temp":40.82,"feels_like":34.88,"pressure":1016,"humidity":56,"dew_point":12.18,"clouds":4,"visibility":10000,"wind_speed":2.89,"wind_deg":224,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605067200,"temp":39.52,"feels_like":33.57,"pressure":1017,"humidity":59,"dew_point":12.76,"clouds":3,"visibility":10000,"wind_speed":2.91,"wind_deg":201,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605070800,"temp":38.82,"feels_like":33.19,"pressure":1018,"humidity":61,"dew_point":13.19,"clouds":2,"visibility":10000,"wind_speed":2.37,"wind_deg":198,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605074400,"temp":38.12,"feels_like":32.9,"pressure":1019,"humidity":63,"dew_point":13.75,"clouds":2,"visibility":10000,"wind_speed":1.66,"wind_deg":226,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605078000,"temp":37.22,"feels_like":32.81,"pressure":1019,"humidity":66,"dew_point":13.93,"clouds":0,"visibility":10000,"wind_speed":0.27,"wind_deg":19,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605081600,"temp":36.28,"feels_like":31.71,"pressure":1020,"humidity":68,"dew_point":13.69,"clouds":0,"visibility":10000,"wind_speed":0.51,"wind_deg":47,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605085200,"temp":35.6,"feels_like":30.87,"pressure":1020,"humidity":70,"dew_point":13.51,"clouds":0,"visibility":10000,"wind_speed":0.83,"wind_deg":107,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605088800,"temp":35.04,"feels_like":29.77,"pressure":1020,"humidity":71,"dew_point":13.17,"clouds":0,"visibility":10000,"wind_speed":1.74,"wind_deg":177,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605092400,"temp":34.56,"feels_like":28.87,"pressure":1020,"humidity":72,"dew_point":12.72,"clouds":0,"visibility":10000,"wind_speed":2.44,"wind_deg":185,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605096000,"temp":34.07,"feels_like":27.79,"pressure":1020,"humidity":73,"dew_point":12.25,"clouds":0,"visibility":10000,"wind_speed":3.49,"wind_deg":185,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605099600,"temp":33.53,"feels_like":27.84,"pressure":1020,"humidity":74,"dew_point":11.8,"clouds":0,"visibility":10000,"wind_speed":2.37,"wind_deg":226,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605103200,"temp":33.3,"feels_like":27.9,"pressure":1020,"humidity":75,"dew_point":11.32,"clouds":0,"visibility":10000,"wind_speed":1.88,"wind_deg":246,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605106800,"temp":35.02,"feels_like":29.7,"pressure":1019,"humidity":69,"dew_point":10.8,"clouds":0,"visibility":10000,"wind_speed":1.7,"wind_deg":244,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605110400,"temp":37.4,"feels_like":31.87,"pressure":1017,"humidity":62,"dew_point":10.36,"clouds":0,"visibility":10000,"wind_speed":1.97,"wind_deg":190,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605114000,"temp":39.92,"feels_like":34.16,"pressure":1016,"humidity":56,"dew_point":9.64,"clouds":0,"visibility":10000,"wind_speed":2.37,"wind_deg":159,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1604944800,"sunrise":1604929101,"sunset":1604965761,"temp":{"day":34.3,"min":31.15,"max":45.77,"night":31.23,"eve":34.63,"morn":39.07},"feels_like":{"day":25.41,"night":24.58,"eve":24.37,"morn":26.98},"pressure":1011,"humidity":66,"dew_point":25.05,"wind_speed":7.67,"wind_deg":12,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"clouds":90,"pop":0.79,"uvi":2.5},{"dt":1605031200,"sunrise":1605015570,"sunset":1605052105,"temp":{"day":43.03,"min":31.23,"max":47.43,"night":38.12,"eve":44.71,"morn":32.22},"feels_like":{"day":36.39,"night":32.9,"eve":38.21,"morn":26.29},"pressure":1011,"humidity":49,"dew_point":8.87,"wind_speed":3.87,"wind_deg":202,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.01,"uvi":2.36},{"dt":1605117600,"sunrise":1605102040,"sunset":1605138452,"temp":{"day":42.35,"min":34.07,"max":47.32,"night":37.26,"eve":44.49,"morn":34.07},"feels_like":{"day":35.85,"night":31.8,"eve":36.91,"morn":27.79},"pressure":1014,"humidity":49,"dew_point":7.63,"wind_speed":3.49,"wind_deg":140,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.04,"uvi":2.35},{"dt":1605204000,"sunrise":1605188509,"sunset":1605224799,"temp":{"day":43.9,"min":34,"max":49.05,"night":40.39,"eve":46.24,"morn":34},"feels_like":{"day":36.23,"night":34.86,"eve":39.94,"morn":27.75},"pressure":1017,"humidity":47,"dew_point":7.92,"wind_speed":5.66,"wind_deg":110,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":1,"pop":0,"uvi":2.26},{"dt":1605290400,"sunrise":1605274979,"sunset":1605311149,"temp":{"day":48.09,"min":37.51,"max":52.74,"night":43.68,"eve":50.13,"morn":37.51},"feels_like":{"day":42.8,"night":38.26,"eve":41.09,"morn":31.87},"pressure":1011,"humidity":44,"dew_point":14.56,"wind_speed":1.9,"wind_deg":105,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"clouds":27,"pop":0.04,"uvi":2.31},{"dt":1605376800,"sunrise":1605361448,"sunset":1605397500,"temp":{"day":51.12,"min":39.99,"max":57.7,"night":43.92,"eve":52.18,"morn":39.99},"feels_like":{"day":45.73,"night":37.8,"eve":44.76,"morn":32.88},"pressure":1007,"humidity":39,"dew_point":15.58,"wind_speed":2.01,"wind_deg":315,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"clouds":27,"pop":0.07,"uvi":2.31},{"dt":1605463200,"sunrise":1605447917,"sunset":1605483853,"temp":{"day":47.77,"min":38.1,"max":51.87,"night":40.37,"eve":46.35,"morn":38.1},"feels_like":{"day":37.53,"night":34.05,"eve":37.89,"morn":31.82},"pressure":1021,"humidity":30,"dew_point":-10.55,"wind_speed":8.97,"wind_deg":298,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.04,"uvi":2.58},{"dt":1605549600,"sunrise":1605534385,"sunset":1605570208,"temp":{"day":53.35,"min":37.83,"max":59.61,"night":46.81,"eve":53.98,"morn":37.83},"feels_like":{"day":47.52,"night":40.44,"eve":47.91,"morn":31.17},"pressure":1012,"humidity":29,"dew_point":0.61,"wind_speed":1.81,"wind_deg":172,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":10,"pop":0,"uvi":2.53}]}'
+  recorded_at: Mon, 09 Nov 2020 18:12:52 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=B41FBB8C0DA88FDB0C7B06526E5356EE; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:52 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:52 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=30504FF5FD91CEA7A36FC1826C5DA4CE; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:52 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:52 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=4C629408B892EF2477383BF6020410B3; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:53 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:53 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=4B0EB1830F9C89B3BA5BA2F2B915B984; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:53 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:53 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=751C90CCB9CAF9B31216D6EA9C78A3A7; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:53 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:53 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=92E849F7872A6D6124381A1FAA0D2369; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:54 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=C204B4D96302D72EC072A9967AB48C2F; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:54 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=0790FF22DBC3219EE534EFFB66AF82E9; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:54 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=1C81306C8A016BC37BEF6170DF076792; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:54 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:54 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAP_API_KEY&to
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:12:55 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '272'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=3FDBEF3A5B93D93B8D34E5887BF618AB; Path=/directions; HttpOnly; Secure
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:12:55 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MjExLCJtZXNzYWdlIjoiIn19LCJpbmZvIjp7InN0YXR1c2NvZGUiOjYxMSwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjAgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiQXQgbGVhc3QgdHdvIGxvY2F0aW9ucyBtdXN0IGJlIHByb3ZpZGVkLiJdfX0=
+  recorded_at: Mon, 09 Nov 2020 18:12:55 GMT
+recorded_with: VCR 6.0.0
