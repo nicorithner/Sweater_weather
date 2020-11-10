@@ -34,8 +34,6 @@ RSpec.describe 'Users API' do
   
         post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-
-        user = User.last
   
         expect(response).not_to be_successful
         expect(response).to have_http_status(406)
@@ -44,15 +42,13 @@ RSpec.describe 'Users API' do
 
       it "Blank password request returns status 406 and a body with error description" do
         user_params = ({
-                        email: 'another@example.com',
+                        email: 'this@example.com',
                         password_confirmation: 'password123'
                       })
         headers = {'CONTENT_TYPE' => 'application/json'}
-  
+        
         post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-        
-        user = User.last
   
         expect(response).not_to be_successful
         expect(response).to have_http_status(406)
