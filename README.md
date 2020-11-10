@@ -61,24 +61,24 @@ You can find the most current version at [Rubygems.org](https://rubygems.org/)
 ### Production
 
 <ul>
-<li><a href="url">bcrypt:</a> <small> The bcrypt Ruby gem provides a simple wrapper for safely handling passwords.</small></li>
-<li><a href="url">faraday:</a> </li>
-<li><a href="url">figaro:</a> </li>
-<li><a href="url">jsonapi-serializer:</a> </li>
+<li><a href="https://rubygems.org/gems/bcrypt">bcrypt:</a> <small> The bcrypt Ruby gem provides a simple wrapper for safely handling passwords.</small></li>
+<li><a href="https://rubygems.org/gems/faraday">faraday:</a> <small>HTTP/REST API client library</small></li>
+<li><a href="https://rubygems.org/gems/figaro">figaro:</a> <small>Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file</small></li>
+<li><a href="https://rubygems.org/gems/jsonapi-serializer">jsonapi-serializer:</a> <small>Fast, simple and easy to use JSON:API serialization library (also known as fast_jsonapi).</small></li>
 </ul>
 
 ### Test and Development
 
 <ul>
-<li><a href="url">capybara:</a> </li>
-<li><a href="url">launchy:</a> </li>
-<li><a href="url">pry:</a> </li>
-<li><a href="url">rspec-rails:</a> </li>
-<li><a href="url">rubocop:</a> </li>
-<li><a href="url">simplecov:</a> </li>
-<li><a href="url">shoulda-matchers:</a> </li>
-<li><a href="url">webmock:</a> </li>
-<li><a href="url">vcr:</a> </li>
+<li><a href="https://rubygems.org/gems/capybara">capybara:</a> <small>Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website</small></li>
+<li><a href="url">launchy:</a> <small></small></li>
+<li><a href="https://rubygems.org/gems/pry">pry:</a> <small>Pry is a runtime developer console and IRB alternative that attempts to bring REPL driven programming to the Ruby language </small></li>
+<li><a href="https://rubygems.org/gems/rspec-rails">rspec-rails:</a> <small>rspec-rails is a testing framework for Rails 5+</small></li>
+<li><a href="https://rubygems.org/gems/rubocop">rubocop:</a> <small>RuboCop is a Ruby code style checking and code formatting tool. It aims to enforce the community-driven Ruby Style Guide.</small></li>
+<li><a href="https://rubygems.org/gems/simplecov">simplecov:</a> <small>Code coverage for Ruby with a powerful configuration library and automatic merging of coverage across test suites</small></li>
+<li><a href="https://rubygems.org/gems/shoulda-matchers">shoulda-matchers:</a> <small>Shoulda Matchers provides RSpec compatible one-liners to test common Rails functionality</small></li>
+<li><a href="https://rubygems.org/gems/webmock">webmock:</a> <small>WebMock allows stubbing HTTP requests and setting expectations on HTTP requests.</small></li>
+<li><a href="https://rubygems.org/gems/vcr">vcr:</a> <small>Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests</small></li>
 </ul>
 
 
