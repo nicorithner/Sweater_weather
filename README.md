@@ -55,10 +55,12 @@ $ rails -v
 Rails 6.0.3.4
 ```
 
+### Gems
+
 This project uses the following additional gems:<br/>
 You can find the most current version at [Rubygems.org](https://rubygems.org/)
 
-### Production
+#### Production
 
 <ul>
 <li><a href="https://rubygems.org/gems/bcrypt">bcrypt:</a> <small> The bcrypt Ruby gem provides a simple wrapper for safely handling passwords.</small></li>
@@ -67,11 +69,9 @@ You can find the most current version at [Rubygems.org](https://rubygems.org/)
 <li><a href="https://rubygems.org/gems/jsonapi-serializer">jsonapi-serializer:</a> <small>Fast, simple and easy to use JSON:API serialization library (also known as fast_jsonapi).</small></li>
 </ul>
 
-### Test and Development
+#### Test and Development
 
 <ul>
-<li><a href="https://rubygems.org/gems/capybara">capybara:</a> <small>Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website</small></li>
-<li><a href="url">launchy:</a> <small></small></li>
 <li><a href="https://rubygems.org/gems/pry">pry:</a> <small>Pry is a runtime developer console and IRB alternative that attempts to bring REPL driven programming to the Ruby language </small></li>
 <li><a href="https://rubygems.org/gems/rspec-rails">rspec-rails:</a> <small>rspec-rails is a testing framework for Rails 5+</small></li>
 <li><a href="https://rubygems.org/gems/rubocop">rubocop:</a> <small>RuboCop is a Ruby code style checking and code formatting tool. It aims to enforce the community-driven Ruby Style Guide.</small></li>
@@ -81,10 +81,12 @@ You can find the most current version at [Rubygems.org](https://rubygems.org/)
 <li><a href="https://rubygems.org/gems/vcr">vcr:</a> <small>Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests</small></li>
 </ul>
 
+### APIs
 
+In this project we used the following APIs:
 
-
-
-
-
-
+<ul>
+<li><a href="https://openweathermap.org/appid">OpenWeather:</a> <small> Weather information for any location on the globe. Some apis are paid. We used OneCall </small></li>
+<li><a href="https://developer.mapquest.com/user/me/apps">MapQuest Developer:</a> <small> Mapping, Geocoding, Directions, and Search provider. Free and paid APIs</small></li>
+<li><a href="https://pixabay.com/service/about/api/">Pixabay Developer API:</a> <small> Access to over 2.1 million photos, illustrations, vector graphics, and videos.</small></li>
+</ul>
