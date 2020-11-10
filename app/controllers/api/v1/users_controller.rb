@@ -7,11 +7,13 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def save_user(user, user_params)
-    unless screen_fields(user_params)
-      user.save
-      user.api_key
-      render json: UsersSerializer.new(user), status: :created
-    end
+    serialize_user(user) unless screen_fields(user_params)
+  end
+
+  def serialize_user(user)
+    user.save
+    user.api_key
+    render json: UsersSerializer.new(user), status: :created
   end
   
   def screen_fields(user_params)
