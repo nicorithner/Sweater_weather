@@ -6,8 +6,10 @@
 
 - [Overview](#overview)
 
-## Overview
+<hr>
 
+## Overview
+<p align="left">
 This Turing Module 3 project provides the developer with a series of wireframes and instructions to produce endpoints that the project front-end developers (ficticious) could use.
 Using request such as `GET /api/v1/forecast?location=denver,co` the app can
 
@@ -16,15 +18,19 @@ Using request such as `GET /api/v1/forecast?location=denver,co` the app can
 * register and user, 
 * log an existing user and 
 * plan a road trip (duration of the trip and weather at arrival)
+</p>
 
-![Wireframe example](wireframe_example.png)
+<br/>
 
+<p align="center">
+<img src="wireframe_example.png" width="400">
+<p>
+
+<p align="left">
 The projects asks to using T.D.D. (test driven development) to develop the project functionality. Gems such as **simplecov**, **webmock**, and **vcr**, among others help us drive this process.
 The testing requirements expected 'sad path' path testing along with functionality. This means to test for when the user doesn't do what is expected. For example, entering the wrong password or omitting the confirmation password.
+</p>
 
-
-![Wireframe example](json_example.png)
-
-![Wireframe example](json_example.png =150)
+<img align="right" src="json_example.png" width="300">
 
 
