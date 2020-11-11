@@ -41,7 +41,7 @@ The testing requirements expected 'sad path' path testing along with functionali
 <small>sample json</small>
 </p>
 
-[Back to top](#table-of-contents)
+[back to top](#table-of-contents)
 
 <hr>
 
@@ -97,7 +97,7 @@ In this project we used the following APIs:
 <li><a href="https://pixabay.com/service/about/api/">Pixabay Developer API:</a> <small> Access to over 2.1 million photos, illustrations, vector graphics, and videos.</small></li>
 </ul>
 
-[Back to top](#table-of-contents)
+[back to top](#table-of-contents)
 
 <hr>
 
@@ -130,7 +130,7 @@ MAP_API_KEY: <api key here without strings>
 WEATHER_API_KEY: <api key here without strings>
 IMAGE_API_KEY: <api key here without strings>
 ```
-[Back to top](#table-of-contents)
+[back to top](#table-of-contents)
 
 ## Testing
 
@@ -170,4 +170,166 @@ In the command line run:
 
 Rubocop will highlight styling errors - according to rails standards - and make recommendations on how to improve the code.
 
-[Back to top](#table-of-contents)
+[back to top](#table-of-contents)
+
+<hr>
+
+## API Endpoints
+
+The exposing these endpoints is the chief purpose of this application. To test this out your self in your computer follow the instructions below. 
+
+### Expose the endpoints in **Postman**
+
+1. Open the terminal in your computer and navigate to where `sweater_weather` is located and `cd` into it.
+2. Once in the directory run the following command in your terminal:
+    `$ rails server`
+3. Open **Postman** and type the following in the address bar:
+    `http://localhost:3000/`
+4. Add the requests below to call each endpoint.
+    example: `http://localhost:3000/api/v1/backgrounds?location=denver,co`
+5. Change the verb to one corresponding to the call
+    for example: `Post`
+6. Send your request by clicking `Send`
+
+
+**Notice** that some of the call require you add the paramteres to the body.
+In postman:
+  1. Click on `body`
+  2. Select `raw`
+  3. Select `json` (by default show as `text`)
+
+
+<p align="center">
+<img src="set_body_to_json.png" width="500"><br/>
+<small>sample Postman setup</small>
+</p>
+
+### Forecast
+
+#### Retrieve weather for a city
+
+Shows the current, hourly, and daily forecast for the location queried. It accepts city and state as parameters.
+
+Request:
+- Content-Type: application/json
+- Accept: application/json
+
+<div align="center">
+
+**get**  `api/v1/forecast?location=denver, co`
+
+</div><br/>
+
+
+<p align="center">
+<img src="forecast_request.png" width="500"><br/>
+<small>sample forecast request</small>
+</p>
+
+[back to top](#table-of-contents)
+
+### Background Image
+
+#### Retrieves background Image for the City
+
+Using Pixabay's API, retrieves an image that is related to the searched location and outputs a serialized json.
+
+Request:
+- Content-Type: application/json
+- Accept: application/json
+
+<div align="center">
+
+**get**  `api/v1/backgrounds?location=denver, co`
+</div><br/>
+
+<p align="center">
+<img src="backgrounds_request.png" width="500"><br/>
+<small>sample background request</small>
+</p>
+
+### User Registration
+
+#### Registers a new user
+
+Registers a new user and generates a unique API key for the user
+
+Request:
+
+- Content-Type: application/json
+- Accept: application/json
+
+The params are passed on in the body of the request not in the uri:
+
+```json
+{
+  "email": "whatever@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+```
+
+<div align="center">
+
+**post**  `/api/v1/users`
+</div><br/>
+
+<p align="center">
+<img src="users_request.png" width="500"><br/>
+<small>sample users request</small>
+</p>
+
+### User Login
+
+#### Authenticates a User 
+
+This request authenticates a user and logs it into the application
+
+Request:
+- Content-Type: application/json
+- Accept: application/json
+
+```json
+{
+  "email": "whatever@example.com",
+  "password": "password"
+}
+```
+
+<div align="center">
+
+**post**  `/api/v1/sessions`
+
+</div><br/>
+<p align="center">
+<img src="login_request.png" width="500"><br/>
+<small>sample login request</small>
+</p>
+
+### Road Trip
+
+#### Returns estimated travel time and arrival forecast for a road trip
+
+This request produces trip duration and destination weather forecast at eta.
+
+Request:
+- Content-Type: application/json
+- Accept: application/json
+
+```json
+{
+  "origin": "Denver,CO",
+  "destination": "Pueblo,CO",
+  "api_key": "jgn983hy48thw9begh98h4539h4"
+}
+```
+
+<div align="center">
+
+**post**  `/api/v1/road_trip`
+
+</div><br/>
+<p align="center">
+<img src="road_trip_request.png" width="500"><br/>
+<small>sample road_trip request</small>
+</p>
