@@ -4,7 +4,8 @@
 
 
 <div align="center">
-  <p><strong>An API Rails App Project</strong></p>
+  
+  ## An API Rails App Project
   <p> Backend Development - Cohort 2006</p>
   <small>Nico Rithner - 2020</small>
 </div>
