@@ -12,6 +12,12 @@
   <small>Nico Rithner - 2020</small>
 </div>
 
+<h3  align="center">Contact Information</h3>
+<p align="center">
+  <small><a target="_blank"href="https://www.linkedin.com/in/nicorithner/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a></small>&nbsp;&nbsp;&nbsp;&nbsp;
+  <small><a href="mailto:nicorithner@gmail.com?subject=Hello%20Ileri,%20From%20Github"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a></small>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
 ## Table of Contents
 
 - [Overview](#overview)
