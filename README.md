@@ -10,6 +10,8 @@
 
 - [Overview](#overview)
 - [Specifications](#specifications)
+- [Installation](#installation)
+- [Testing](#testing)
 
 ## Overview
 
@@ -39,6 +41,8 @@ The testing requirements expected 'sad path' path testing along with functionali
 <small>sample json</small>
 </p>
 
+[Back to top](#table-of-contents)
+
 <hr>
 
 ## Specifications
@@ -54,6 +58,8 @@ ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-darwin19]
 $ rails -v
 Rails 6.0.3.4
 ```
+<br/>
+<hr>
 
 ### Gems
 
@@ -90,3 +96,78 @@ In this project we used the following APIs:
 <li><a href="https://developer.mapquest.com/user/me/apps">MapQuest Developer:</a> <small> Mapping, Geocoding, Directions, and Search provider. Free and paid APIs</small></li>
 <li><a href="https://pixabay.com/service/about/api/">Pixabay Developer API:</a> <small> Access to over 2.1 million photos, illustrations, vector graphics, and videos.</small></li>
 </ul>
+
+[Back to top](#table-of-contents)
+
+<hr>
+
+## Installation
+
+### Fork and Clone The Repo
+
+Fork this Github repository: [Sweater_weather](https://github.com/nicorithner/Sweater_weather)
+
+Clone your 'Sweater_weather' repository using SSH:
+```
+  $ git clone git@github.com:<your-github-username>/Sweater_weather.git
+```
+
+### Initial Installation
+
+In the command line run the following commands in order:
+
+1. `$ rails db:{create,migrate}`
+2. `$ rails generate rspec:install`
+3. `$ bundle exec figaro install`
+5. `$ bundle install`
+
+### Set Up API Keys
+
+Find the `application.yml` file in the config folder and add your API keys
+example:
+```ruby
+MAP_API_KEY: <api key here without strings>
+WEATHER_API_KEY: <api key here without strings>
+IMAGE_API_KEY: <api key here without strings>
+```
+[Back to top](#table-of-contents)
+
+## Testing
+
+### RSpec
+
+<p> We can check the test on the spec folder by running rspec</p>
+
+In the command line run<br/>
+
+`$ bundle exec rspec`
+
+All tests should be passing.
+
+If you get a `nil` or a `vcr` error,
+you may need to delete `vcr_cassettes` in the `/spec/fixtures` folder.
+
+### Simplecov
+
+After running the tests simplecov gathers the coverage and neatly reports them in an html page.
+
+In the command line you should see something like this:<br/>
+
+`Coverage report generated for RSpec to /Users/nicomacbook/turing/3module/sweater_weather/coverage. 196 / 196 LOC (100.0%) covered.`
+
+<p align="center">
+<img src="simplecov_coverage_terminal.png" ><br/>
+<small>sample rspec/simplecov terminal output</small>
+</p>
+
+### Rubocop
+
+Rubocop helps us clean up the code.
+
+In the command line run:
+
+`$ rubocop`
+
+Rubocop will highlight styling errors - according to rails standards - and make recommendations on how to improve the code.
+
+[Back to top](#table-of-contents)
