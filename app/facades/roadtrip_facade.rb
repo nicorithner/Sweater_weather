@@ -16,7 +16,7 @@ class RoadtripFacade
     time = trip[:route][:formattedTime]
     RoadTrip.create(origin: params[:origin],
                     destination: params[:destination],
-                    duration: "#{time[0, 1]} hours, #{time[3..4]} minutes",
+                    duration: "#{time[0..1]} hours, #{time[3..4]} minutes",
                     temperature: eta_forecast[:temp],
                     description: eta_forecast[:weather][0][:description],
                     user_id: params[:user_id])
