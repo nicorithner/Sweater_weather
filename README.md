@@ -279,6 +279,8 @@ The params are passed on in the body of the request not in the uri:
 <small>sample users request</small>
 </p>
 
+[back to top](#table-of-contents)
+
 ### User Login
 
 #### Authenticates a User 
@@ -305,6 +307,8 @@ Request:
 <img src="login_request.png" width="500"><br/>
 <small>sample login request</small>
 </p>
+
+[back to top](#table-of-contents)
 
 ### Road Trip
 
@@ -333,3 +337,5 @@ Request:
 <img src="road_trip_request.png" width="500"><br/>
 <small>sample road_trip request</small>
 </p>
+
+[back to top](#table-of-contents)
