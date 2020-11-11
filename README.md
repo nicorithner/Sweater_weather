@@ -204,6 +204,7 @@ In postman:
 <small>sample Postman setup</small>
 </p>
 
+
 ### Forecast
 
 #### Retrieve weather for a city
@@ -226,6 +227,14 @@ Request:
 <small>sample forecast request</small>
 </p>
 
+<div align="center">
+
+#### Test it Out In Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39bdebc6f173b246f3cc)
+
+</div>
+
 [back to top](#table-of-contents)
 
 ### Background Image
@@ -247,6 +256,16 @@ Request:
 <img src="backgrounds_request.png" width="500"><br/>
 <small>sample background request</small>
 </p>
+
+<div align="center">
+
+#### Test it Out In Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39bdebc6f173b246f3cc)
+
+</div>
+
+[back to top](#table-of-contents)
 
 ### User Registration
 
@@ -281,6 +300,14 @@ The params are passed on in the body of the request not in the uri:
 
 [back to top](#table-of-contents)
 
+<div align="center">
+
+#### Test it Out In Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39bdebc6f173b246f3cc)
+
+</div>
+
 ### User Login
 
 #### Authenticates a User 
@@ -307,6 +334,14 @@ Request:
 <img src="login_request.png" width="500"><br/>
 <small>sample login request</small>
 </p>
+
+<div align="center">
+
+#### Test it Out In Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39bdebc6f173b246f3cc)
+
+</div>
 
 [back to top](#table-of-contents)
 
@@ -337,5 +372,13 @@ Request:
 <img src="road_trip_request.png" width="500"><br/>
 <small>sample road_trip request</small>
 </p>
+
+<div align="center">
+
+#### Test it Out In Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39bdebc6f173b246f3cc)
+
+</div>
 
 [back to top](#table-of-contents)
