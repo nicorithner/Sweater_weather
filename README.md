@@ -39,8 +39,10 @@ Using request such as `GET /api/v1/forecast?location=denver,co` the app can
 <p>
 
 <p align="left">
-The projects asks to using T.D.D. (test driven development) to develop the project functionality. Gems such as **simplecov**, **webmock**, and **vcr**, among others help us drive this process.
-The testing requirements expected 'sad path' path testing along with functionality. This means to test for when the user doesn't do what is expected. For example, entering the wrong password or omitting the confirmation password.
+  
+The projects asks for T.D.D. (test driven development) to develop the project functionality. Gems such as **simplecov**, **webmock**, and **vcr**, among others help us drive this process.<br/>
+The testing requirements expect 'sad path' path testing along with functionality. This means to test for when the user doesn't do what is expected. For example, entering the wrong password or omitting the confirmation password.
+
 </p>
 
 <p align="center">
