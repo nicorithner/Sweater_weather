@@ -12,6 +12,7 @@
 - [Specifications](#specifications)
 - [Installation](#installation)
 - [Testing](#testing)
+- [Endpoints](#api-endpoints)
 
 ## Overview
 
