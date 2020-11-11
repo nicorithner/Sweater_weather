@@ -9,13 +9,13 @@
   ![](https://img.shields.io/badge/Rails-6.0.3.4-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=4e03fc) ![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=fc0324) ![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg) 
   
   <p> Backend Development - Cohort 2006</p>
-  <small>Nico Rithner - 2020</small>
+  <h3>Nico Rithner - 2020</h3>
 </div>
 
-<h3  align="center">Contact Information</h3>
+<h5  align="center">Contact Information</h5>
 <p align="center">
-  <small><a target="_blank"href="https://www.linkedin.com/in/nicorithner/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a></small>&nbsp;&nbsp;&nbsp;&nbsp;
-  <small><a href="mailto:nicorithner@gmail.com?subject=Hello%20Ileri,%20From%20Github"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a></small>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a target="_blank"href="https://www.linkedin.com/in/nicorithner/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:nicorithner@gmail.com?subject=Hello%20Ileri,%20From%20Github"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 ## Table of Contents
