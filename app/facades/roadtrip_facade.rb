@@ -13,6 +13,9 @@ class RoadtripFacade
   end
 
   def self.create_trip(params, trip, eta_forecast)
+    if trip[:info][:statuscode] == 402
+      trip[:info][:messages][0]
+    else
     time = trip[:route][:formattedTime]
     RoadTrip.create(origin: params[:origin],
                     destination: params[:destination],
@@ -20,5 +23,6 @@ class RoadtripFacade
                     temperature: eta_forecast[:temp],
                     description: eta_forecast[:weather][0][:description],
                     user_id: params[:user_id])
+    end
   end
 end
