@@ -1,15 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe "Roadtrip Api" do
-  describe "A successful request returns roadtrip data" do
-
-    before :each do
+  before :each do
       user_params = ({ email: 'whatever@example.com', password: 'password', password_confirmation: 'password' })
       headers = {'CONTENT_TYPE' => 'application/json'}
       post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
       @json = JSON.parse(response.body, symbolize_names: true)
       @api_key = @json[:data][:attributes][:api_key]
     end
+  describe "A successful request returns roadtrip data" do
 
     it "Gets a successful response and json with roadtrip's attributes" do
       VCR.use_cassette('road_trip_complete') do
@@ -77,6 +76,18 @@ RSpec.describe "Roadtrip Api" do
         expect(response).to have_http_status(401)
         expect(json[:message]).to eq('Incorrect credentials')
       end
+    end
+
+    it "A request to a location overseas returns status 406 and a body with error description", :vcr do
+        roadtrip_params = ({origin: "New York, NY", destination: "London, UK", api_key: @api_key})
+        headers = {'CONTENT_TYPE' => 'application/json'}
+
+        post '/api/v1/road_trip', headers: headers, params: JSON.generate(roadtrip_params)
+        json = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).not_to be_successful
+        expect(response).to have_http_status(406)
+        expect(json[:message]).to eq('We are unable to route with the given locations.')
     end
   end
 end
