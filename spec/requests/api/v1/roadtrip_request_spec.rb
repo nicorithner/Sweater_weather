@@ -18,7 +18,7 @@ RSpec.describe "Roadtrip Api" do
         headers = {'CONTENT_TYPE' => 'application/json'}
         post '/api/v1/road_trip', headers: headers, params: JSON.generate(roadtrip_params)
         json = JSON.parse(response.body, symbolize_names: true)
-        
+
         expect(response).to be_successful
         expect(json[:data]).to be_a(Hash)
         expect(json[:data][:id]).to eq(nil)
@@ -26,9 +26,12 @@ RSpec.describe "Roadtrip Api" do
         expect(json[:data][:attributes][:start_city]).to eq("New York, NY")
         expect(json[:data][:attributes][:end_city]).to eq("Los Angeles, CA")
         expect(json[:data][:attributes][:travel_time]).to be_a(String)
-        expect(json[:data][:attributes][:travel_time]).to include("hours", "minutes")
+        expect(json[:data][:attributes][:travel_time]).to eq("40 hours, 30 minutes")
         expect(json[:data][:attributes][:weather_at_eta][:temperature]).to be_a(String)
+        expect(json[:data][:attributes][:weather_at_eta][:temperature].length).to eq(5)
+        expect(json[:data][:attributes][:weather_at_eta][:temperature]).to eq("68.07")
         expect(json[:data][:attributes][:weather_at_eta][:conditions]).to be_a(String)
+        expect(json[:data][:attributes][:weather_at_eta][:conditions]).to eq("clear sky")
       end
     end
   end
