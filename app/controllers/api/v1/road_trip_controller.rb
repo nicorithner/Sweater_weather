@@ -21,6 +21,10 @@ class Api::V1::RoadTripController < ApplicationController
   def road_trip(user, params)
     road_trip_params = { origin: params[:origin], destination: params[:destination], user_id: user.id }
     road_trip = RoadtripFacade.get_trip_data(road_trip_params)
+    if road_trip.class == String
+      render json: { message: road_trip }, status: :not_acceptable
+    else
     render json: RoadTripSerializer.new(road_trip)
+    end
   end
 end
