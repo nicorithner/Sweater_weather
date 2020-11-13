@@ -1,15 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe "Roadtrip Api" do
-  describe "A successful request returns roadtrip data" do
-
-    before :each do
+  before :each do
       user_params = ({ email: 'whatever@example.com', password: 'password', password_confirmation: 'password' })
       headers = {'CONTENT_TYPE' => 'application/json'}
       post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
       @json = JSON.parse(response.body, symbolize_names: true)
       @api_key = @json[:data][:attributes][:api_key]
     end
+  describe "A successful request returns roadtrip data" do
 
     it "Gets a successful response and json with roadtrip's attributes" do
       VCR.use_cassette('road_trip_complete') do
@@ -18,7 +17,7 @@ RSpec.describe "Roadtrip Api" do
         headers = {'CONTENT_TYPE' => 'application/json'}
         post '/api/v1/road_trip', headers: headers, params: JSON.generate(roadtrip_params)
         json = JSON.parse(response.body, symbolize_names: true)
-        
+
         expect(response).to be_successful
         expect(json[:data]).to be_a(Hash)
         expect(json[:data][:id]).to eq(nil)
@@ -26,9 +25,12 @@ RSpec.describe "Roadtrip Api" do
         expect(json[:data][:attributes][:start_city]).to eq("New York, NY")
         expect(json[:data][:attributes][:end_city]).to eq("Los Angeles, CA")
         expect(json[:data][:attributes][:travel_time]).to be_a(String)
-        expect(json[:data][:attributes][:travel_time]).to include("hours", "minutes")
+        expect(json[:data][:attributes][:travel_time]).to eq("40 hours, 30 minutes")
         expect(json[:data][:attributes][:weather_at_eta][:temperature]).to be_a(String)
+        expect(json[:data][:attributes][:weather_at_eta][:temperature].length).to eq(5)
+        expect(json[:data][:attributes][:weather_at_eta][:temperature]).to eq("68.07")
         expect(json[:data][:attributes][:weather_at_eta][:conditions]).to be_a(String)
+        expect(json[:data][:attributes][:weather_at_eta][:conditions]).to eq("clear sky")
       end
     end
   end
@@ -74,6 +76,18 @@ RSpec.describe "Roadtrip Api" do
         expect(response).to have_http_status(401)
         expect(json[:message]).to eq('Incorrect credentials')
       end
+    end
+
+    it "A request to a location overseas returns status 406 and a body with error description", :vcr do
+        roadtrip_params = ({origin: "New York, NY", destination: "London, UK", api_key: @api_key})
+        headers = {'CONTENT_TYPE' => 'application/json'}
+
+        post '/api/v1/road_trip', headers: headers, params: JSON.generate(roadtrip_params)
+        json = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).not_to be_successful
+        expect(response).to have_http_status(406)
+        expect(json[:message]).to eq('We are unable to route with the given locations.')
     end
   end
 end
