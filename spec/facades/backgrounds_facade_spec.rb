@@ -10,9 +10,7 @@ RSpec.describe 'Backgrounds Facade' do
       expect(background_image.id).to eq(nil) 
       expect(background_image.location).to be_a(String) 
       expect(background_image.image_url).to be_a(String) 
-      expect(background_image.source).to be_a(String) 
-      expect(background_image.author).to be_a(String) 
-      expect(background_image.logo).to be_a(String)
+      expect(background_image.image_collection).to be_an(Array)
     end
   end
 end
