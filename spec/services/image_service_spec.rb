@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ImageService do
-  it "Can get a city background image from a query" do
-    VCR.use_cassette('background') do
+  it "Can get a city background image from a query", :vcr do
       location = 'denver, co'
       data = ImageService.get_image(location)
 
@@ -16,6 +15,5 @@ RSpec.describe ImageService do
         expect(link).to be_a(String)
         expect(link).to include('jpg')
       end
-    end
   end
 end

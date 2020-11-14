@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 describe Image do
-  it 'has attributes' do
-    VCR.use_cassette('background') do
+  it 'has attributes', :vcr do
       data = ImageService.get_image('denver, co')
       background_image = Image.new(data)
       expect(background_image).to be_a(Image)
@@ -15,6 +14,5 @@ describe Image do
         expect(link).to be_a(String)
         expect(link).to include('jpg')
       end
-    end 
   end
 end
