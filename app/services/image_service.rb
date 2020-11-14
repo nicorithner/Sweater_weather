@@ -1,18 +1,26 @@
 class ImageService
+
+  def self.conn
+    Faraday.new('https://api.bing.microsoft.com/')
+  end
+
   def self.get_image(location)
-    response = conn.get('api/') do |f|
-      f.params['key'] = ENV['IMAGE_API_KEY']
-      f.params['q'] = location.split(',')[0]
-      f.params['image_type'] = 'photo'
-      f.params['orientation'] = 'horizontal'
+    response = conn.get('v7.0/images/search?') do |f|
+      f.headers['Ocp-Apim-Subscription-Key'] = ENV['IMAGE_API_KEY']
+      f.params['q'] = location
+      f.params['imageType'] = 'Photo'
+      f.params['size'] = 'Large'
+      f.params['count'] = '10'
+      f.params['safeSearch'] = 'Strict'
     end
 
     json = JSON.parse(response.body, symbolize_names: true)
-    other_data = { location: location, source: 'pixabay.com', logo: 'https://pixabay.com/static/img/logo_square.png' }
-    { json: json[:hits][0], other: other_data }
+    {images: get_image_collection(json), location: location}
   end
 
-  def self.conn
-    Faraday.new('https://pixabay.com/')
+  def self.get_image_collection(json)
+    json[:value].map do |image|
+        image[:contentUrl]
+    end
   end
 end
