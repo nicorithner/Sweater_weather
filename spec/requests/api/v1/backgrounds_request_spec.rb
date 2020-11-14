@@ -13,10 +13,6 @@ RSpec.describe 'Api::V1::Backgrounds' do
         expect(json[:data][:attributes]).to have_key(:image)
         expect(json[:data][:attributes][:image]).to have_key(:location)
         expect(json[:data][:attributes][:image]).to have_key(:image_url)
-        expect(json[:data][:attributes][:image]).to have_key(:credit)
-        expect(json[:data][:attributes][:image][:credit]).to have_key(:source)
-        expect(json[:data][:attributes][:image][:credit]).to have_key(:author)
-        expect(json[:data][:attributes][:image][:credit]).to have_key(:logo)
       end
     end
   end
