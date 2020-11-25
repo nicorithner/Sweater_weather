@@ -27,7 +27,7 @@ RSpec.describe "Roadtrip Api" do
         expect(json[:data][:attributes][:travel_time]).to be_a(String)
         expect(json[:data][:attributes][:travel_time]).to eq("40 hours, 30 minutes")
         expect(json[:data][:attributes][:weather_at_eta][:temperature]).to be_a(String)
-        expect(json[:data][:attributes][:weather_at_eta][:temperature].length).to eq(5)
+        expect(json[:data][:attributes][:weather_at_eta][:temperature].length).to eq(4)
         expect(json[:data][:attributes][:weather_at_eta][:conditions]).to be_a(String)
         expect(json[:data][:attributes][:weather_at_eta][:conditions]).to eq("clear sky")
       end

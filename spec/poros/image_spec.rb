@@ -12,7 +12,7 @@ describe Image do
       expect(background_image.image_collection.count).to eq(10)
       background_image.image_collection.each do |link| 
         expect(link).to be_a(String)
-        expect(link).to include('jpg')
+        expect(link.downcase).to include('jpg')
       end
   end
 end
