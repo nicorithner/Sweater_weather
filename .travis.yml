@@ -1,0 +1,14 @@
+language: ruby
+cache:
+- bundler
+before_script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rake assets:precompile
+deploy:
+  provider: heroku
+  api_key:
+    secure: jNB5gQLX+VIbx2O3My/FisVLLZSpl7VxvMtnNtFJErTpFdwEb8zgMfPXdGL7Wf75uqbKIx1fhsnHJKbTsHy9iYYTPVq+xRIwrcmq6VVnI2MF6cvsCzd8nuDPwR0NcKJO0vHMN7MzT0rG9RWHVB2a1M27GVjsVxXCYMmEybNl0QZnwu7GiA3V0oyo4A2exsaZjdwIvjt6RPsOCMpno4LN8JipUEMNuqIYayIRAJrMRDBpgR9ypvGdZZG6/OSO5Bij8mc+RAfCi7QKsgGON24A8bLszzZANio6S18vbB4sx1skxhGXEaQ4XYgUC7cP5kDzmZjBSr5toG+vV4qdBAHd3u2zruK73yS8IFCLUOL007yo2V7hPb4XJzsSsQrVSZ8WuXo5nob05wh2sQauFUjT8xpYVczeWevNHcHx6KmVF4pLWAklyCtZrHFcFmZQlx6WZnkP+vZ03O7l9pzKIpt0x8NWBgBM3WNEieUkMW5+4eyodmo2F5rz0U066xwKeNQ4gL6WbpcqPUlrELj5YKwfLbQHxMrzh1q/KFH07mf+JP7TuliIbG2pZ4TDMLFafHWRffcqqhUs7Sj2aU/XOtRIHjqpdOHmjxg4FbEzOd2noFF9zpOD9DO20Ets3uiVmw0a2iGpk6EI51OVVioxNcNTsAUptNv6vG+QYPi+/6Uzm8I=
+  app: sweater-weather-api-nico
+  on:
+    repo: nicorithner/sweater_weather
