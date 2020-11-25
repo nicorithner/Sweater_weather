@@ -1,7 +1,5 @@
 # Sweater Weather
 
-
-
 <div align="center">
   
   ## An API Rails App Project
