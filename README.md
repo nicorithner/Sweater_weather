@@ -1,13 +1,14 @@
 # Sweater Weather
 
-
 <div align="center">
   
-  ## An API Rails App Project
+## An API Rails App Project
   
-  ![](https://img.shields.io/badge/Rails-6.0.3.4-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=4e03fc) ![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=fc0324) 
-  [![Build Status](https://travis-ci.com/nicorithner/sweater_weather.svg?branch=main)](https://travis-ci.com/nicorithner/sweater_weather)
-  ![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg) 
+![](https://img.shields.io/badge/Rails-6.0.3.4-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=4e03fc)
+![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=fc0324)
+![Heroku](https://pyheroku-badge.herokuapp.com/?app=pyheroku-badge)
+[![Build Status](https://travis-ci.com/nicorithner/sweater_weather.svg?branch=main)](https://travis-ci.com/nicorithner/sweater_weather)
+![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg) 
   
   <p> Backend Development - Cohort 2006</p>
   <h3>Nico Rithner - 2020</h3>
@@ -26,6 +27,7 @@
 - [Installation](#installation)
 - [Testing](#testing)
 - [Endpoints](#api-endpoints)
+- [See Heroku-Endpoints in Postman](#heroku-api-endpoints)
 
 ## Overview
 
@@ -396,5 +398,25 @@ Request:
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39bdebc6f173b246f3cc)
 
 </div>
+
+[back to top](#table-of-contents)
+
+<hr>
+
+## Heroku API Endpoints
+
+This api-application has been deployed to Heroku. You can test the endpoints in postman by following the link below and running postman in your browser.
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/92c3914f7cca906629f1)
+
+If you have postman installed locally you can run it in the app directly
+
+`https://sweater-weather-api-nico.herokuapp.com/api/v1/<type here the desired endpoint>`
+
+</div><br/>
+<p align="center">
+<img src="heroku_user_registration_sample.png" width="500"><br/>
+<small>sample road_trip request</small>
+</p>
 
 [back to top](#table-of-contents)
