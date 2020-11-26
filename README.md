@@ -416,7 +416,7 @@ If you have postman installed locally you can run it in the app directly
 </div><br/>
 <p align="center">
 <img src="heroku_user_registration_sample.png" width="500"><br/>
-<small>sample road_trip request</small>
+<small>Heroku-app user registration request</small>
 </p>
 
 [back to top](#table-of-contents)
