@@ -1,16 +1,12 @@
 class Api::V1::UsersController < ApplicationController
   def create
     user = User.new(user_params)
-    save_user(user, params)
+    save_user(user)
   end
 
   private
 
-  def save_user(user, user_params)
-    serialize_user(user)
-  end
-
-  def serialize_user(user)
+  def save_user(user)
     if user.valid?
       user.save
       user.api_key
