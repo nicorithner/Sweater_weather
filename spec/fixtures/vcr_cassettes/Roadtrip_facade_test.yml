@@ -19,7 +19,9 @@ http_interactions:
       message: OK
     headers:
       Date:
+
       - Sat, 02 Jan 2021 02:46:34 GMT
+
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,6 +29,7 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
+
       - JSESSIONID=1257A1A62BDF2A58EE1EE987E7ED8632; Path=/directions; HttpOnly; Secure
       Expires:
       - Mon, 20 Dec 1998 01:00:00 GMT
