@@ -25,7 +25,7 @@ http_interactions:
       Pragma:
       - no-cache
       Content-Length:
-      - '62339'
+      - '62120'
       Content-Type:
       - application/json; charset=utf-8
       Expires:
@@ -33,31 +33,17 @@ http_interactions:
       P3p:
       - CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
       Bingapis-Traceid:
-<<<<<<< HEAD
-      - 96ECBE2662B542138255484276793BB1
+      - CDD8BE777BEA404EA38AD0221ED739B0
       X-Msedge-Clientid:
-      - 129BEED904A26B160499E16A05EE6AD5
+      - 21C0628DEFAB6D7B35B06D3AEE4D6CFF
       X-Msapi-Userstate:
-      - 877d
+      - 2af2
       X-Search-Responseinfo:
-      - InternalResponseTime=196,MSDatacenter=CO4
+      - InternalResponseTime=210,MSDatacenter=CH1B
       X-Msedge-Ref:
-      - 'Ref A: 96ECBE2662B542138255484276793BB1 Ref B: BY3EDGE0516 Ref C: 2021-01-02T02:08:39Z'
+      - 'Ref A: CDD8BE777BEA404EA38AD0221ED739B0 Ref B: DM2EDGE0918 Ref C: 2021-01-06T00:04:03Z'
       Apim-Request-Id:
-      - 076714bb-43a9-49dd-a9aa-175c75418133
-=======
-      - 23F93359F4FE4D9387C5915AE33A7B00
-      X-Msedge-Clientid:
-      - 2380B11EE7AB6CE2055FBEADE6E76D85
-      X-Msapi-Userstate:
-      - d75b
-      X-Search-Responseinfo:
-      - InternalResponseTime=128,MSDatacenter=CO4
-      X-Msedge-Ref:
-      - 'Ref A: 23F93359F4FE4D9387C5915AE33A7B00 Ref B: BY3EDGE0411 Ref C: 2021-01-02T02:46:32Z'
-      Apim-Request-Id:
-      - 6aab5815-52e2-4b59-9096-afca2c635736
->>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
+      - df2a2a0e-ff4f-465a-b877-aef918e32326
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Content-Type-Options:
@@ -65,11 +51,7 @@ http_interactions:
       Csp-Billing-Usage:
       - CognitiveServices.BingSearchV7.Transaction=1
       Date:
-<<<<<<< HEAD
-      - Sat, 02 Jan 2021 02:08:39 GMT
-=======
-      - Sat, 02 Jan 2021 02:46:32 GMT
->>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
+      - Wed, 06 Jan 2021 00:04:04 GMT
     body:
       encoding: UTF-8
       string: '{"_type": "Images", "instrumentation": {"_type": "ResponseInstrumentation"},
@@ -78,7 +60,18 @@ http_interactions:
         "queryContext": {"originalQuery": "denver,co", "alterationDisplayQuery": "\"denver
         co\"", "alterationOverrideQuery": "+denver,co", "alterationMethod": "AM_ChangeItWithRecourse",
         "alterationType": "CombinedAlterationsChained"}, "totalEstimatedMatches":
-        100, "nextOffset": 10, "currentOffset": 0, "value": [{"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=B4D0C0CA7EB0ED62932C1609E472EE6E0866090B&simid=608015422315956011",
+        100, "nextOffset": 10, "currentOffset": 0, "value": [{"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=EFC74D5EFBC14FDF5388DD0CADBD523B5198CAF2&simid=608054283127164431",
+        "name": "Django Girls Denver, CO #2", "thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OIP.xig337_KouGN49_68H9aMQHaCt&pid=Api",
+        "datePublished": "2020-01-07T07:56:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/djangogirls.org\/uploads\/event\/cities\/BackstretchSkyline.jpg",
+        "hostPageUrl": "https:\/\/djangogirls.org\/denver\/", "contentSize": "222373
+        B", "encodingFormat": "jpeg", "hostPageDisplayUrl": "https:\/\/djangogirls.org\/denver",
+        "width": 2160, "height": 789, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.D4ExyqBwPoiHq-iX_kAfmA&pid=Api",
+        "hostPageDomainFriendlyName": "Django Girls", "hostPageDiscoveredDate": "2016-05-08T00:00:00.0000000Z",
+        "thumbnail": {"width": 474, "height": 173}, "imageInsightsToken": "ccid_xig337\/K*cp_69E2C7E3736D8582DF78B376B03C9453*mid_EFC74D5EFBC14FDF5388DD0CADBD523B5198CAF2*simid_608054283127164431*thid_OIP.xig337!_KouGN49!_68H9aMQHaCt",
+        "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 22, "availableSizesCount":
+        10}, "imageId": "EFC74D5EFBC14FDF5388DD0CADBD523B5198CAF2", "accentColor":
+        "3D588E"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=B4D0C0CA7EB0ED62932C1609E472EE6E0866090B&simid=608015422315956011",
         "name": "File:Downtown Denver, CO.jpg", "thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OIP.HsCcIr9dcK-6ArqP48oIUAHaE8&pid=Api",
         "datePublished": "2013-05-23T12:00:00.0000000Z", "isFamilyFriendly": true,
         "creativeCommons": "AttributionShareAlike", "contentUrl": "http:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/81\/Downtown_Denver,_CO.jpg",
@@ -89,19 +82,66 @@ http_interactions:
         "hostPageDomainFriendlyName": "Wikimedia", "hostPageDiscoveredDate": "2013-05-23T12:00:00.0000000Z",
         "thumbnail": {"width": 474, "height": 316}, "imageInsightsToken": "ccid_HsCcIr9d*cp_EDAC9161457136F8D58ED8F69C61FA90*mid_B4D0C0CA7EB0ED62932C1609E472EE6E0866090B*simid_608015422315956011*thid_OIP.HsCcIr9dcK-6ArqP48oIUAHaE8",
         "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 4, "availableSizesCount":
-        4}, "imageId": "B4D0C0CA7EB0ED62932C1609E472EE6E0866090B", "accentColor":
-        "4D647B"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=EFC74D5EFBC14FDF5388DD0CADBD523B5198CAF2&simid=608054283119693252",
-        "name": "Django Girls Denver, CO #2", "thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OIP.xig337_KouGN49_68H9aMQHaCt&pid=Api",
-        "datePublished": "2020-01-07T07:56:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/djangogirls.org\/uploads\/event\/cities\/BackstretchSkyline.jpg",
-        "hostPageUrl": "https:\/\/djangogirls.org\/denver\/", "contentSize": "222373
-        B", "encodingFormat": "jpeg", "hostPageDisplayUrl": "https:\/\/djangogirls.org\/denver",
-        "width": 2160, "height": 789, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.D4ExyqBwPoiHq-iX_kAfmA&pid=Api",
-        "hostPageDomainFriendlyName": "Django Girls", "hostPageDiscoveredDate": "2016-05-08T00:00:00.0000000Z",
-        "thumbnail": {"width": 474, "height": 173}, "imageInsightsToken": "ccid_xig337\/K*cp_69E2C7E3736D8582DF78B376B03C9453*mid_EFC74D5EFBC14FDF5388DD0CADBD523B5198CAF2*simid_608054283119693252*thid_OIP.xig337!_KouGN49!_68H9aMQHaCt",
-        "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 22, "availableSizesCount":
-        10}, "imageId": "EFC74D5EFBC14FDF5388DD0CADBD523B5198CAF2", "accentColor":
-        "3D588E"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=CAF5ECA35E09CFB889446CF6F7E526CD2E1DB4A4&simid=608035501272270387",
+        3}, "imageId": "B4D0C0CA7EB0ED62932C1609E472EE6E0866090B", "accentColor":
+        "4D647B"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=4DE2BA8F006ED9A2C57E87F351D662E211C813D8&simid=607996468590084217",
+        "name": "Living In Denver, CO - Denver Livability", "thumbnailUrl": "https:\/\/tse1.mm.bing.net\/th?id=OIP.LwBdTRmmVSq1qacEfPWK3AHaE2&pid=Api",
+        "datePublished": "2019-11-08T19:37:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/www.areavibes.com\/photos\/places\/denver-co-1200.jpg",
+        "hostPageUrl": "https:\/\/www.areavibes.com\/denver-co\/livability\/", "contentSize":
+        "251944 B", "encodingFormat": "jpeg", "hostPageDisplayUrl": "https:\/\/www.areavibes.com\/denver-co\/livability",
+        "width": 1200, "height": 785, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.xvn0GzKQkI2oV5NczzPhZQ&pid=Api",
+        "hostPageDomainFriendlyName": "AreaVibes", "hostPageDiscoveredDate": "2018-05-26T00:00:00.0000000Z",
+        "thumbnail": {"width": 474, "height": 310}, "imageInsightsToken": "ccid_LwBdTRmm*cp_159940CD17CE3D523BFE86D196914F19*mid_4DE2BA8F006ED9A2C57E87F351D662E211C813D8*simid_607996468590084217*thid_OIP.LwBdTRmmVSq1qacEfPWK3AHaE2",
+        "insightsMetadata": {"pagesIncludingCount": 58, "availableSizesCount": 37},
+        "imageId": "4DE2BA8F006ED9A2C57E87F351D662E211C813D8", "accentColor": "108ABB"},
+        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=8D6E758EB8AA2992F7452DDD37D0689C8DA0D15A&simid=608033555667553486",
+        "name": "1515 Arapahoe St, Denver, CO 80202 - Office for Lease ...", "thumbnailUrl":
+        "https:\/\/tse4.mm.bing.net\/th?id=OIP.nIhHK8mTwcGSlbsmG-awdQHaE7&pid=Api",
+        "datePublished": "2020-11-14T11:40:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/images1.loopnet.com\/i2\/iV4PUWhxEBipeO8TH5UrnA_V3pMxsIxo798BuUOVS3o\/116\/1515-Arapahoe-St-Denver-CO-Building-Photo-1-LargeHighDefinition.jpg",
+        "hostPageUrl": "https:\/\/www.loopnet.com\/Listing\/1515-Arapahoe-St-Denver-CO\/4364637\/",
+        "contentSize": "765662 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
+        "https:\/\/www.loopnet.com\/Listing\/1515-Arapahoe-St-Denver-CO\/4364637",
+        "width": 2047, "height": 1364, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.okexB6rsTenRJBd13rjsEg&pid=Api",
+        "hostPageDomainFriendlyName": "LoopNet", "hostPageDiscoveredDate": "2018-10-21T00:00:00.0000000Z",
+        "thumbnail": {"width": 474, "height": 315}, "imageInsightsToken": "ccid_nIhHK8mT*cp_C4B452DC08815D0B4E8EC1612738480C*mid_8D6E758EB8AA2992F7452DDD37D0689C8DA0D15A*simid_608033555667553486*thid_OIP.nIhHK8mTwcGSlbsmG-awdQHaE7",
+        "insightsMetadata": {"pagesIncludingCount": 3, "availableSizesCount": 3},
+        "imageId": "8D6E758EB8AA2992F7452DDD37D0689C8DA0D15A", "accentColor": "2B63A0"},
+        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=BE222E41D634F36DA456D4A442C7069E8F8CED1F&simid=607986491392527100",
+        "name": "Denver, CO Convention Site Selection", "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OIP.ZhFSSsgx_WuKi07qAIBQEAHaE7&pid=Api",
+        "datePublished": "2019-11-07T17:58:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/meetingsource.com\/wp-content\/uploads\/2017\/01\/Denver_345958679.jpg",
+        "hostPageUrl": "https:\/\/meetingsource.com\/listing\/denver\/", "contentSize":
+        "4493093 B", "encodingFormat": "jpeg", "hostPageDisplayUrl": "https:\/\/meetingsource.com\/listing\/denver",
+        "width": 5709, "height": 3805, "hostPageDiscoveredDate": "2017-05-11T00:00:00.0000000Z",
+        "thumbnail": {"width": 474, "height": 315}, "imageInsightsToken": "ccid_ZhFSSsgx*cp_E30740F5091B6B1A068F191D8AD80A3E*mid_BE222E41D634F36DA456D4A442C7069E8F8CED1F*simid_607986491392527100*thid_OIP.ZhFSSsgx!_WuKi07qAIBQEAHaE7",
+        "insightsMetadata": {"pagesIncludingCount": 19, "availableSizesCount": 14},
+        "imageId": "BE222E41D634F36DA456D4A442C7069E8F8CED1F", "accentColor": "3E6A8D"},
+        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=BC543F37204B8EF99E3E89206AA1EAB342C640C6&simid=608054132782334912",
+        "name": "855 N Pennsylvania Street, Denver, CO 80203", "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OIP.zoUx6hUXWEoqxEsOcg8okAHaE8&pid=Api",
+        "datePublished": "2020-06-12T12:28:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/corefact-cdn.s3.us-west-1.amazonaws.com\/ListAssistImage\/574095\/ListAssistImage-574095-web_ready-31b83895-234c-40dd-92f5-a2106ac4f12d-2000x2000.jpeg",
+        "hostPageUrl": "https:\/\/go.cf4m.com\/pw\/855NPennsylvaniaStreet80203", "contentSize":
+        "524137 B", "encodingFormat": "jpeg", "hostPageDisplayUrl": "https:\/\/go.cf4m.com\/pw\/855NPennsylvaniaStreet80203",
+        "width": 2000, "height": 1335, "hostPageDiscoveredDate": "2019-04-18T00:00:00.0000000Z",
+        "thumbnail": {"width": 474, "height": 316}, "imageInsightsToken": "ccid_zoUx6hUX*cp_38E0BB953FC8CB486EDB79F3797827EA*mid_BC543F37204B8EF99E3E89206AA1EAB342C640C6*simid_608054132782334912*thid_OIP.zoUx6hUXWEoqxEsOcg8okAHaE8",
+        "insightsMetadata": {"pagesIncludingCount": 1, "availableSizesCount": 1},
+        "imageId": "BC543F37204B8EF99E3E89206AA1EAB342C640C6", "accentColor": "375F94"},
+        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=875834B778069981FB7F97A0BA6CB1014B41927B&simid=608038829916032754",
+        "name": "2018 Laurentian Reception in Denver, CO | St. Lawrence ...", "thumbnailUrl":
+        "https:\/\/tse4.mm.bing.net\/th?id=OIP.crnLJlT56pmSKt2N4sXKjwHaC9&pid=Api",
+        "datePublished": "2019-12-28T06:56:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/www.stlawu.edu\/sites\/default\/files\/Denver-Summer-Panorama-web.jpg",
+        "hostPageUrl": "https:\/\/www.stlawu.edu\/alumni\/event\/2018-laurentian-reception-denver-co",
+        "contentSize": "870912 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
+        "https:\/\/www.stlawu.edu\/alumni\/event\/2018-laurentian-reception-denver-co",
+        "width": 1308, "height": 523, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.TQU0UIKfut-ZXymL73H_Jw&pid=Api",
+        "hostPageDomainFriendlyName": "St. Lawrence University", "hostPageDiscoveredDate":
+        "2018-09-16T00:00:00.0000000Z", "thumbnail": {"width": 474, "height": 189},
+        "imageInsightsToken": "ccid_crnLJlT5*cp_8301EBDBA51ED64AC255DDA02ECBF5BF*mid_875834B778069981FB7F97A0BA6CB1014B41927B*simid_608038829916032754*thid_OIP.crnLJlT56pmSKt2N4sXKjwHaC9",
+        "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 12, "availableSizesCount":
+        1}, "imageId": "875834B778069981FB7F97A0BA6CB1014B41927B", "accentColor":
+        "B45F17"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=CAF5ECA35E09CFB889446CF6F7E526CD2E1DB4A4&simid=608035501272270387",
         "name": "ALTA Survey Denver CO | ALTA Survey Denver | ALTA Land Survey", "thumbnailUrl":
         "https:\/\/tse2.mm.bing.net\/th?id=OIP.--QD4f2FAm-dSWhO9b2A4gHaDP&pid=Api",
         "datePublished": "2019-10-18T00:32:00.0000000Z", "isFamilyFriendly": true,
@@ -113,44 +153,9 @@ http_interactions:
         "thumbnail": {"width": 474, "height": 207}, "imageInsightsToken": "ccid_++QD4f2F*cp_19D1466929E78F54E723B1D4F18FE2D3*mid_CAF5ECA35E09CFB889446CF6F7E526CD2E1DB4A4*simid_608035501272270387*thid_OIP.--QD4f2FAm-dSWhO9b2A4gHaDP",
         "insightsMetadata": {"pagesIncludingCount": 7, "availableSizesCount": 1},
         "imageId": "CAF5ECA35E09CFB889446CF6F7E526CD2E1DB4A4", "accentColor": "906F3B"},
-        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=BE222E41D634F36DA456D4A442C7069E8F8CED1F&simid=607986491392527100",
-        "name": "Denver, CO Convention Site Selection", "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OIP.ZhFSSsgx_WuKi07qAIBQEAHaE7&pid=Api",
-        "datePublished": "2019-11-07T17:58:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/meetingsource.com\/wp-content\/uploads\/2017\/01\/Denver_345958679.jpg",
-        "hostPageUrl": "https:\/\/meetingsource.com\/listing\/denver\/", "contentSize":
-        "4493093 B", "encodingFormat": "jpeg", "hostPageDisplayUrl": "https:\/\/meetingsource.com\/listing\/denver",
-        "width": 5709, "height": 3805, "hostPageDiscoveredDate": "2017-05-11T00:00:00.0000000Z",
-        "thumbnail": {"width": 474, "height": 315}, "imageInsightsToken": "ccid_ZhFSSsgx*cp_E30740F5091B6B1A068F191D8AD80A3E*mid_BE222E41D634F36DA456D4A442C7069E8F8CED1F*simid_607986491392527100*thid_OIP.ZhFSSsgx!_WuKi07qAIBQEAHaE7",
-        "insightsMetadata": {"pagesIncludingCount": 19, "availableSizesCount": 14},
-        "imageId": "BE222E41D634F36DA456D4A442C7069E8F8CED1F", "accentColor": "3E6A8D"},
-        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=F03EAD9F5223430F11B5BBA920EC7AFA8104AE4E&simid=608022844018591915",
-        "name": "The Best Denver, CO Hacks From Our Readers", "thumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OIP.djMkSMVuoBZx97PgyURs5QHaEK&pid=Api",
-        "datePublished": "2020-07-24T15:13:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/i.kinja-img.com\/gawker-media\/image\/upload\/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200\/wtsimmfeu5kuxowmtths.jpg",
-        "hostPageUrl": "https:\/\/lifehacker.com\/the-best-denver-co-hacks-from-our-readers-1821267598",
-        "contentSize": "137772 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
-        "https:\/\/lifehacker.com\/the-best-denver-co-hacks-from-our-readers-1821267598",
-        "width": 1200, "height": 675, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.DqMYTp7y31wqjjz4HSdQBA&pid=Api",
-        "hostPageDomainFriendlyName": "Lifehacker", "hostPageDiscoveredDate": "2017-12-14T00:00:00.0000000Z",
-        "thumbnail": {"width": 474, "height": 266}, "imageInsightsToken": "ccid_djMkSMVu*cp_EE1832AAED72AAA1267D78989D44DFD4*mid_F03EAD9F5223430F11B5BBA920EC7AFA8104AE4E*simid_608022844018591915*thid_OIP.djMkSMVuoBZx97PgyURs5QHaEK",
-        "insightsMetadata": {"pagesIncludingCount": 2, "availableSizesCount": 3},
-        "imageId": "F03EAD9F5223430F11B5BBA920EC7AFA8104AE4E", "accentColor": "126FB9"},
-        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=34790C04CC19AC1FAEBA77F1DB77234CC03E7AA3&simid=608002365607184918",
-        "name": "Living in Denver: A Moving Guide - Relocation Tips & Advice", "thumbnailUrl":
-        "https:\/\/tse3.mm.bing.net\/th?id=OIP.aEInpanLZW7X_tQUh--NhQHaEj&pid=Api",
-        "datePublished": "2019-12-19T04:44:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/s3.amazonaws.com\/zumpermedia\/blog\/2017\/04\/Denver-CO-relocation.jpg",
-        "hostPageUrl": "https:\/\/www.zumper.com\/blog\/2017\/12\/moving-to-denver\/",
-        "contentSize": "114569 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
-        "https:\/\/www.zumper.com\/blog\/2017\/12\/moving-to-denver", "width": 1000,
-        "height": 615, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.ihjRrF6LO0TZFG1oXD9dAw&pid=Api",
-        "hostPageDomainFriendlyName": "Zumper", "hostPageDiscoveredDate": "2018-01-07T00:00:00.0000000Z",
-        "thumbnail": {"width": 474, "height": 291}, "imageInsightsToken": "ccid_aEInpanL*cp_E0EE8858FDE11D63DFEC3EEC46C0F81D*mid_34790C04CC19AC1FAEBA77F1DB77234CC03E7AA3*simid_608002365607184918*thid_OIP.aEInpanLZW7X!_tQUh--NhQHaEj",
-        "insightsMetadata": {"pagesIncludingCount": 24, "availableSizesCount": 15},
-        "imageId": "34790C04CC19AC1FAEBA77F1DB77234CC03E7AA3", "accentColor": "8D793E"},
         {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=FF56CD8E187DAB364B7A91668668333F6741A26E&simid=608048622406273838",
-        "name": "1600 Broadway, Denver, CO, 80202 - Coworking Space on LoopNet.com",
-        "thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OIP.J6kS1uRRygRLCOaxJ-CI_wHaG8&pid=Api",
+        "name": "1600 Broadway, Denver, CO, 80202 - Coworking Space on ...", "thumbnailUrl":
+        "https:\/\/tse3.mm.bing.net\/th?id=OIP.J6kS1uRRygRLCOaxJ-CI_wHaG8&pid=Api",
         "datePublished": "2020-05-14T17:13:00.0000000Z", "isFamilyFriendly": true,
         "contentUrl": "https:\/\/images1.loopnet.com\/i2\/S5NPhSX8jpHnIykSwh2PNeuA07cUYzfXSiFzFQSj3T0\/116\/image.jpg",
         "hostPageUrl": "https:\/\/www.loopnet.com\/Listing\/1600-Broadway-Denver-CO\/4432695\/",
@@ -161,48 +166,20 @@ http_interactions:
         "thumbnail": {"width": 474, "height": 444}, "imageInsightsToken": "ccid_J6kS1uRR*cp_0A900F5040A089862CA144CDE5876598*mid_FF56CD8E187DAB364B7A91668668333F6741A26E*simid_608048622406273838*thid_OIP.J6kS1uRRygRLCOaxJ-CI!_wHaG8",
         "insightsMetadata": {"pagesIncludingCount": 3, "availableSizesCount": 3},
         "imageId": "FF56CD8E187DAB364B7A91668668333F6741A26E", "accentColor": "365B95"},
-        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=875834B778069981FB7F97A0BA6CB1014B41927B&simid=608038829916032754",
-        "name": "2018 Laurentian Reception in Denver, CO | St. Lawrence University
-        Alumni", "thumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OIP.crnLJlT56pmSKt2N4sXKjwHaC9&pid=Api",
-        "datePublished": "2019-12-28T06:56:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/www.stlawu.edu\/sites\/default\/files\/Denver-Summer-Panorama-web.jpg",
-        "hostPageUrl": "https:\/\/www.stlawu.edu\/alumni\/event\/2018-laurentian-reception-denver-co",
-        "contentSize": "870912 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
-        "https:\/\/www.stlawu.edu\/alumni\/event\/2018-laurentian-reception-denver-co",
-        "width": 1308, "height": 523, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.TQU0UIKfut-ZXymL73H_Jw&pid=Api",
-        "hostPageDomainFriendlyName": "St. Lawrence University", "hostPageDiscoveredDate":
-        "2018-09-16T00:00:00.0000000Z", "thumbnail": {"width": 474, "height": 189},
-        "imageInsightsToken": "ccid_crnLJlT5*cp_8301EBDBA51ED64AC255DDA02ECBF5BF*mid_875834B778069981FB7F97A0BA6CB1014B41927B*simid_608038829916032754*thid_OIP.crnLJlT56pmSKt2N4sXKjwHaC9",
-        "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 12, "availableSizesCount":
-        2}, "imageId": "875834B778069981FB7F97A0BA6CB1014B41927B", "accentColor":
-        "B45F17"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=ADDB7BB1FA4B19BFF58437A2C2C649A772D106A2&simid=608003705591496734",
-        "name": "2100 Welton Street, Denver CO 80205 - Zall Company", "thumbnailUrl":
-        "https:\/\/tse4.mm.bing.net\/th?id=OIP.tjTAyd079ExdmuqwIjZy6wHaFp&pid=Api",
-        "datePublished": "2020-01-11T07:16:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/zallcompany.com\/wp-content\/uploads\/2018\/04\/2100-Welton-Street.jpg",
-        "hostPageUrl": "https:\/\/zallcompany.com\/property\/2100-welton-street-denver-co-80205",
-        "contentSize": "460476 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
-        "https:\/\/zallcompany.com\/property\/2100-welton-street-denver-co-80205",
-        "width": 1200, "height": 916, "hostPageDiscoveredDate": "2018-04-19T00:00:00.0000000Z",
-        "thumbnail": {"width": 474, "height": 361}, "imageInsightsToken": "ccid_tjTAyd07*cp_63025DB9BC401715DBF6EC9CAA32D7FA*mid_ADDB7BB1FA4B19BFF58437A2C2C649A772D106A2*simid_608003705591496734*thid_OIP.tjTAyd079ExdmuqwIjZy6wHaFp",
-        "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 2, "availableSizesCount":
-        2}, "imageId": "ADDB7BB1FA4B19BFF58437A2C2C649A772D106A2", "accentColor":
-        "664930"}, {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=C8A58FA70E7B1AFAED8D56B371FB9B9460426ED7&simid=608018218239463282",
-        "name": "Blake Street Apartments Apartments - Denver, CO | Apartments.com",
-        "thumbnailUrl": "https:\/\/tse1.mm.bing.net\/th?id=OIP.rFuIppc9J4zLmJL0GW0_nAHaE7&pid=Api",
-        "datePublished": "2020-09-01T12:11:00.0000000Z", "isFamilyFriendly": true,
-        "contentUrl": "https:\/\/images1.apartments.com\/i2\/s601f_whoNG_3v3FCNruYRt5NAEULT93tYinVDE-SyM\/117\/blake-street-apartments-denver-co-building-photo.jpg",
-        "hostPageUrl": "https:\/\/www.apartments.com\/blake-street-apartments-denver-co\/20bve79\/",
-        "contentSize": "165474 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
-        "https:\/\/www.apartments.com\/blake-street-apartments-denver-co\/20bve79",
-        "width": 541, "height": 360, "hostPageFavIconUrl": "https:\/\/www.bing.com\/th?id=ODF.0jHx3ZcAyHh9HfyvWHvAnA&pid=Api",
-        "hostPageDomainFriendlyName": "Apartments.com", "hostPageDiscoveredDate":
-        "2017-02-14T00:00:00.0000000Z", "thumbnail": {"width": 474, "height": 315},
-        "imageInsightsToken": "ccid_rFuIppc9*cp_9AD53919E0A8BC9CE06EBA70298C5BB8*mid_C8A58FA70E7B1AFAED8D56B371FB9B9460426ED7*simid_608018218239463282*thid_OIP.rFuIppc9J4zLmJL0GW0!_nAHaE7",
-        "insightsMetadata": {"recipeSourcesCount": 0, "pagesIncludingCount": 3, "availableSizesCount":
-        2}, "imageId": "C8A58FA70E7B1AFAED8D56B371FB9B9460426ED7", "accentColor":
-        "987F33"}], "queryExpansions": [{"text": "City Park Denver Co", "displayText":
-        "City Park", "webSearchUrl": "https:\/\/www.bing.com\/images\/search?q=City+Park+Denver+Co&tq=%7b%22pq%22%3a%22denver%2cco%22%2c%22qs%22%3a%5b%7b%22cv%22%3a%22%22%2c%22pv%22%3a%22%22%2c%22hps%22%3atrue%2c%22iqp%22%3afalse%7d%2c%7b%22cv%22%3a%22City+Park%22%2c%22pv%22%3a%22%22%2c%22hps%22%3afalse%2c%22iqp%22%3atrue%7d%5d%7d&FORM=IRPATC",
+        {"webSearchUrl": "https:\/\/www.bing.com\/images\/search?view=detailv2&FORM=OIIRPO&q=denver%2cco&id=420D90154A573A22F958F85F8AB6DF804555B8D2&simid=608049687582870210",
+        "name": "1521 Vine Street 102, Unit 102 Denver, CO 80206 -- MLS ...", "thumbnailUrl":
+        "https:\/\/tse4.mm.bing.net\/th?id=OIP.0Ns1VXAe9FVyEQWDVSmjFQHaE7&pid=Api",
+        "datePublished": "2020-06-12T15:41:00.0000000Z", "isFamilyFriendly": true,
+        "contentUrl": "https:\/\/d2w6u17ngtanmy.cloudfront.net\/images\/property\/denver\/5897900\/5897981-1.jpeg",
+        "hostPageUrl": "https:\/\/www.denverhomevalue.com\/listing\/denver_5897981--1521-Vine-St-Unit-102-Denver-CO-80206\/",
+        "contentSize": "131944 B", "encodingFormat": "jpeg", "hostPageDisplayUrl":
+        "https:\/\/www.denverhomevalue.com\/listing\/denver_5897981--1521-Vine-St-Unit-102-Denver-CO...",
+        "width": 1000, "height": 665, "hostPageDiscoveredDate": "2019-05-12T00:00:00.0000000Z",
+        "thumbnail": {"width": 474, "height": 315}, "imageInsightsToken": "ccid_0Ns1VXAe*cp_8E9F7B04B8C2C3FCFB47BA2EBE219C8C*mid_420D90154A573A22F958F85F8AB6DF804555B8D2*simid_608049687582870210*thid_OIP.0Ns1VXAe9FVyEQWDVSmjFQHaE7",
+        "insightsMetadata": {"pagesIncludingCount": 1, "availableSizesCount": 1},
+        "imageId": "420D90154A573A22F958F85F8AB6DF804555B8D2", "accentColor": "185DB3"}],
+        "queryExpansions": [{"text": "City Park Denver Co", "displayText": "City Park",
+        "webSearchUrl": "https:\/\/www.bing.com\/images\/search?q=City+Park+Denver+Co&tq=%7b%22pq%22%3a%22denver%2cco%22%2c%22qs%22%3a%5b%7b%22cv%22%3a%22%22%2c%22pv%22%3a%22%22%2c%22hps%22%3atrue%2c%22iqp%22%3afalse%7d%2c%7b%22cv%22%3a%22City+Park%22%2c%22pv%22%3a%22%22%2c%22hps%22%3afalse%2c%22iqp%22%3atrue%7d%5d%7d&FORM=IRPATC",
         "searchLink": "https:\/\/api.bing.microsoft.com\/api\/v7\/images\/search?q=City+Park+Denver+Co&tq=%7b%22pq%22%3a%22denver%2cco%22%2c%22qs%22%3a%5b%7b%22cv%22%3a%22%22%2c%22pv%22%3a%22%22%2c%22hps%22%3atrue%2c%22iqp%22%3afalse%7d%2c%7b%22cv%22%3a%22City+Park%22%2c%22pv%22%3a%22%22%2c%22hps%22%3afalse%2c%22iqp%22%3atrue%7d%5d%7d",
         "thumbnail": {"thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?q=City+Park+Denver+Co&pid=Api&mkt=en-US&adlt=strict&t=1"}},
         {"text": "Denver Co Mountains", "displayText": "Mountains", "webSearchUrl":
@@ -495,9 +472,5 @@ http_interactions:
         "https:\/\/www.bing.com\/images\/search?q=Coors+Field+Denver&FORM=IRPATC",
         "searchLink": "https:\/\/api.bing.microsoft.com\/api\/v7\/images\/search?q=Coors+Field+Denver",
         "thumbnail": {"thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?q=Coors+Field+Denver&pid=Api&mkt=en-US&adlt=strict&t=1"}}]}'
-<<<<<<< HEAD
-  recorded_at: Sat, 02 Jan 2021 02:08:39 GMT
-=======
-  recorded_at: Sat, 02 Jan 2021 02:46:32 GMT
->>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
+  recorded_at: Wed, 06 Jan 2021 00:04:04 GMT
 recorded_with: VCR 6.0.0
