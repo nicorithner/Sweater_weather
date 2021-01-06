@@ -19,11 +19,19 @@ http_interactions:
       message: OK
     headers:
       Date:
+<<<<<<< HEAD
       - Sat, 02 Jan 2021 02:08:46 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '1735'
+=======
+      - Sat, 02 Jan 2021 02:46:40 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1734'
+>>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,7 +43,11 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
+<<<<<<< HEAD
       - Sat, 02 Jan 2021 02:08:46 GMT
+=======
+      - Sat, 02 Jan 2021 02:46:40 GMT
+>>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +55,11 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
+<<<<<<< HEAD
       - JSESSIONID=258C6F32C2686D5F78DCBE8040CDAA64; Path=/; HttpOnly; Secure
+=======
+      - JSESSIONID=4EBCABCD1CDD5666DEEA2458BB4DE57D; Path=/; HttpOnly; Secure
+>>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
       Status:
       - success
       Transactionweight:
@@ -56,7 +72,13 @@ http_interactions:
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,
         co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+<<<<<<< HEAD
         County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAP_API_KEY&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-360501815"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
         County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAP_API_KEY&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-850632072"}]}]}'
   recorded_at: Sat, 02 Jan 2021 02:08:46 GMT
+=======
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAP_API_KEY&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1974533347"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAP_API_KEY&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=306873115"}]}]}'
+  recorded_at: Sat, 02 Jan 2021 02:46:40 GMT
+>>>>>>> 5b6f0f3f9f2069f39a40144254d36f073bae779f
 recorded_with: VCR 6.0.0

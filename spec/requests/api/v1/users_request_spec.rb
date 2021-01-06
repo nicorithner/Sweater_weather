@@ -34,10 +34,10 @@ RSpec.describe 'Users API' do
   
         post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-  
+
         expect(response).not_to be_successful
         expect(response).to have_http_status(406)
-        expect(json[:message]).to eq('Email cannot be blank')
+        expect(json[:errors]).to eq(["Email can't be blank"])
       end
 
       it "Blank password request returns status 406 and a body with error description" do
@@ -49,10 +49,10 @@ RSpec.describe 'Users API' do
         
         post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-  
+
         expect(response).not_to be_successful
         expect(response).to have_http_status(406)
-        expect(json[:message]).to eq('Password cannot be blank')
+        expect(json[:errors]).to eq(["Password can't be blank"])
       end
 
       it "Not matching password request returns status 406 and a body with error description" do
@@ -68,7 +68,7 @@ RSpec.describe 'Users API' do
 
         expect(response).not_to be_successful
         expect(response).to have_http_status(406)
-        expect(json[:message]).to eq("Passwords don't match")
+        expect(json[:errors]).to eq(["Password confirmation doesn't match Password"])
       end
     end
   end
@@ -93,7 +93,7 @@ RSpec.describe 'Users API' do
   
       post '/api/v1/sessions', headers: headers, params: JSON.generate(login_params)
       json = JSON.parse(response.body, symbolize_names: :true)
-      
+
       user = User.last
 
       expect(response).to be_successful
@@ -123,7 +123,7 @@ RSpec.describe 'Users API' do
     
         post '/api/v1/sessions', headers: headers, params: JSON.generate(login_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-        
+
         user = User.last
   
         expect(response).not_to be_successful
@@ -148,7 +148,7 @@ RSpec.describe 'Users API' do
     
         post '/api/v1/sessions', headers: headers, params: JSON.generate(login_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-        
+
         user = User.last
   
         expect(response).not_to be_successful
@@ -173,7 +173,7 @@ RSpec.describe 'Users API' do
     
         post '/api/v1/sessions', headers: headers, params: JSON.generate(login_params)
         json = JSON.parse(response.body, symbolize_names: :true)
-        
+
         user = User.last
   
         expect(response).not_to be_successful
