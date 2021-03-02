@@ -13,7 +13,7 @@ RSpec.describe ImageService do
 
       data[:images].each do |link|
         expect(link).to be_a(String)
-        expect(link.downcase).to include('jpg')
+        expect(link.downcase).to include('jpg').or include('png').or include('jpeg')
       end
   end
 end
